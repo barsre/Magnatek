@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+$White:         #fff;
+$lightgrey:     #aaa;
+$darkgrey:      #666;
+$orange:        #f89e0c;
+ 
+body {
+	margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    
+    img, ul {
+        display: inline-block;
+    }
+    
+    img {
+        height: 80px;
+        margin: 10px 80px;
+    }
+    
+    ul {
+        float: right;
+        list-style: none;
+        margin: 40px 80px;
+        
+        a {
+            display: inline-block;
+            margin: 0 30px;
+            font-size: 0.8vw;
+        }
+        
+        a :hover {
+            transition: 0.5s;
+            color: $orange; 
+        }
+    }
+}
