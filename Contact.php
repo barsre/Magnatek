@@ -38,6 +38,8 @@
 		8270 Hoejbjerg
 		Denmark </h3>
 </section>
+            
+    <?php include 'includes/footer.php';?>
 
 </body>
 

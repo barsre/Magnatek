@@ -22,22 +22,64 @@ header {
   header img, header ul {
     display: inline-block; }
   header img {
-    height: 80px;
+    width: 20%;
     margin: 10px 80px; }
   header ul {
     float: right;
     list-style: none;
     margin: 40px 3%; }
+    header ul .onpage {
+      color: #f89e0c; }
     header ul a {
       display: inline-block;
       margin: 0 30px;
-      font-size: 0.9vw; }
+      font-size: 1vw;
+      vertical-align: top;
+      line-height: 0.8; }
     header ul a :hover {
       transition: 0.5s;
       color: #f89e0c; }
+    header ul div {
+      margin: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #f89e0c; }
 
-footer {
-  height: 200px; }
+.footer {
+  background-color: #666;
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  padding: 30px 10% 10px;
+  color: white; }
+  .footer ul {
+    list-style: none; }
+    .footer ul a:hover {
+      transition: 0.5s;
+      color: #f89e0c; }
+  .footer__links {
+    margin-top: 0;
+    font-size: 1.4vw;
+    line-height: 1.6; }
+  .footer__contact {
+    margin-top: 10px;
+    line-height: 1.2; }
+    .footer__contact a {
+      font-size: 1.4vw; }
+    .footer__contact div {
+      width: 70%;
+      height: 2px;
+      margin: 15px 0 5px;
+      background-color: white; }
+    .footer__contact ul {
+      padding-left: 0;
+      display: inline-block;
+      vertical-align: top;
+      width: 35%;
+      line-height: 1.4;
+      font-size: 1.1vw; }
+  .footer img {
+    height: 200px;
+    margin-bottom: 0; }
 
 .video {
   height: 40vw; }
@@ -52,7 +94,7 @@ footer {
     font-size: 1vw; }
 
 .heighlights {
-  background-image: url(../img/Heighlights.jpg);
+  background-image: url(../img/frontpage/Heighlights.jpg);
   background-size: cover;
   margin-top: 50px;
   text-align: center;
@@ -84,12 +126,19 @@ footer {
 
 .info {
   margin: auto;
-  margin-top: 100px;
-  width: 70%; }
-  .info img {
-    display: none; }
+  background-image: url(../img/frontpage/info_background.jpeg);
+  background-size: cover;
+  background-position: center; }
   .info p {
-    width: 50%; }
+    margin-left: 15%;
+    width: 35%;
+    font-size: 1.2vw;
+    line-height: 1.4;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0; }
+    .info p br {
+      line-height: 2.5; }
 
 .headline {
   padding-top: 180px;
