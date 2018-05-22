@@ -42,6 +42,9 @@
         Feel free to contact us and let’s find the optimal solution to your needs.</p>
     </section>
     
+    <footer>
+    </footer>
+    
 </body>
 
 <script src="js/script.js"></script>
