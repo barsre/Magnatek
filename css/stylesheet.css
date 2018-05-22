@@ -91,4 +91,23 @@ footer {
   .info p {
     width: 50%; }
 
+.headline {
+  padding-top: 180px;
+  text-align: center; }
+  .headline h1 {
+    font-size: 2vw; }
+
+.contact {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  grid-gap: 10%;
+  margin: auto;
+  width: 80%; }
+  .contact__logo {
+    text-align: center; }
+    .contact__logo__phone {
+      width: 180px; }
+    .contact__logo__email {
+      width: 180px; }
+
 /*# sourceMappingURL=stylesheet.css.map */

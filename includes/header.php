@@ -1,6 +1,6 @@
 <?php
 echo '<header>
-        <img src="img/Logo.jpg">
+        <img src="img/general/Logo.jpg">
         <ul>
             <a href="Index.php"><li>Frontpage</li></a>
             <a href="Index.php"><li>Products</li></a>

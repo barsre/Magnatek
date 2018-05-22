@@ -39,30 +39,30 @@ header {
     background-color: white;
     position: fixed;
     width: 100%;
-    
+
     img, ul {
         display: inline-block;
     }
-    
+
     img {
         height: 80px;
         margin: 10px 80px;
     }
-    
+
     ul {
         float: right;
         list-style: none;
         margin: 40px 3%;
-        
+
         a {
             display: inline-block;
             margin: 0 30px;
             font-size: 0.9vw;
         }
-        
+
         a :hover {
             transition: 0.5s;
-            color: $orange; 
+            color: $orange;
         }
     }
 }
@@ -80,7 +80,7 @@ footer {
 
 .product {
     text-align: center;
-    
+
     &__button {
         color: $orange;
         padding: 10px 40px;
@@ -96,30 +96,30 @@ footer {
     margin-top: 50px;
     text-align: center;
     color: white;
-        
+
     img {
         height: 100px;
         padding: 40px 0 40px;
     }
-    
+
     ul {
         max-width: 1600px;
         margin: auto;
         padding-bottom: 50px;
-        
+
         li {
             display: inline-block;
             margin: 0 30px;
             width: 20%;
             vertical-align: top;
             font-size: 1vw;
-            
+
             b {
                 font-family: arial;
                 font-weight: lighter;
                 font-size: 1.2vw;
             }
-            
+
             div {
                 width: 30%;
                 height: 5px;
@@ -136,12 +136,45 @@ footer {
     margin: auto;
     margin-top: 100px;
     width: 70%;
-    
+
     img{
         display: none;
     }
-    
+
     p {
         width: 50%;
     }
+}
+
+// contact
+
+.headline {
+	padding-top: 180px;
+	text-align: center;
+
+	h1{
+		font-size: 2vw;
+	}
+	
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: 40% 55%;
+	grid-gap: 10%;
+	margin: auto;
+	width: 80%;
+
+	&__logo
+{
+	text-align: center;
+	&__phone
+	{
+		width: 180px;
+	}
+	&__email
+	{
+		width: 180px;
+	}
+}
 }
