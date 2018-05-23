@@ -1,0 +1,65 @@
+/* CSS Document */
+.frontpage {
+  padding-top: 10vw;
+  height: 27vw;
+  width: 80%;
+  margin: auto; }
+  .frontpage__header {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-weight: lighter;
+    font-size: 2.5vw; }
+  .frontpage__content {
+    display: grid;
+    grid-template-columns: 30% 40% 30%; }
+    .frontpage__content h1 {
+      font-weight: lighter;
+      font-size: 1.5vw;
+      text-align: center;
+      width: 80%;
+      margin: auto; }
+      .frontpage__content h1 b {
+        font-family: arial;
+        font-weight: lighter;
+        font-size: 1.7vw; }
+      .frontpage__content h1 div {
+        margin: 10px auto;
+        height: 3px;
+        width: 20%;
+        background-color: #f89e0c; }
+    .frontpage__content img {
+      width: 100%; }
+
+.product {
+  padding-top: 10vw;
+  height: 27vw;
+  width: 70%;
+  margin: auto; }
+  .product h1 {
+    margin-bottom: 10px;
+    font-size: 2vw;
+    color: #666; }
+  .product__categories {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 10px 2%; }
+    .product__categories button {
+      height: 150px; }
+
+.product_button {
+  text-align: center; }
+  .product_button button {
+    color: #f89e0c;
+    padding: 10px 40px;
+    margin: 3vw 0 4vw;
+    border-radius: 50px;
+    border-color: #f89e0c;
+    font-size: 1.4vw;
+    transition: 0.5s;
+    width: 20%; }
+  .product_button button:hover {
+    background-color: #f89e0c;
+    color: black; }
+
+/*# sourceMappingURL=stylesheet_frontpage.css.map */
