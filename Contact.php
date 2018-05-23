@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<title>Contact Page</title>
 
-	<link href="css/stylesheet.css" rel="stylesheet">
+	<link href="css/stylesheet_global.css" rel="stylesheet">
+    <link href="css/stylesheet_contact.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
