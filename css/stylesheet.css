@@ -141,15 +141,16 @@ header {
       line-height: 2.5; }
 
 .headline {
-  padding-top: 180px;
+  padding-top: 140px;
+  padding-bottom: 40px;
   text-align: center; }
   .headline h1 {
-    font-size: 2vw; }
+    font-size: 3vw; }
 
 .contact {
   display: grid;
-  grid-template-columns: 40% 55%;
-  grid-gap: 10%;
+  grid-template-columns: 28% 34% 28%;
+  grid-gap: 5%;
   margin: auto;
   width: 80%; }
   .contact__logo {
@@ -158,5 +159,23 @@ header {
       width: 180px; }
     .contact__logo__email {
       width: 180px; }
+    .contact__logo__fax {
+      width: 180px; }
+
+.maps {
+  display: grid;
+  grid-template-columns: 45% 30%;
+  grid-gap: 5%;
+  margin: auto;
+  width: 80%;
+  padding-top: 8%;
+  padding-bottom: 15%; }
+  .maps__pointer {
+    width: 180px; }
+  .maps__header {
+    text-align: right; }
+    .maps__header__headline {
+      font-size: 3vw;
+      padding-top: -10%; }
 
 /*# sourceMappingURL=stylesheet.css.map */

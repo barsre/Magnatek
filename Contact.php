@@ -29,16 +29,31 @@
 			<h2>Call us</h2>
 			<h3>+45 38 86 01 42	<h3>
 		</section>
+		<section class="contact__logo">
+			<img class="contact__logo__email" src="img/contact/fax.png" alt="fax logo">
+			<h2>FAX us</h2>
+			<h3>+45 38 86 06 39 <h3>
+		</section>
 </div>
 
-<section class="headline">
-	<h2>Find us here</h2>
-	<h3> Magnatek aps</h3>
-	<h3> Bjødstrup 6B
-		8270 Hoejbjerg
-		Denmark </h3>
+<div class="maps">
+<section class="maps__header">
+	<h1 class="maps__header__headline"> Find us here</h1>
+	<h3>Magnatek aps</h3>
+	<h3>Bjødstrup 6B </h3>
+	<h3>8270 Hoejbjerg </h3>
+	<h3>Denmark </h3>
 </section>
-            
+<section class="maps__logo">
+	<img class="maps__logo__pointer" src="img/contact/pointer.png" alt="pointer logo">
+</section>
+<section class="maps__map">
+	<iframe src="https://www.google.com/maps/embed?pb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
+</div>
+
+
+
     <?php include 'includes/footer.php';?>
 
 </body>
