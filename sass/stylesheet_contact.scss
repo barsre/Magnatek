@@ -19,6 +19,7 @@ $orange:        #f89e0c;
 
 	h1{
 		font-size: 3vw;
+		padding-bottom: 20px;	
 	}
 
 }
@@ -54,8 +55,8 @@ $orange:        #f89e0c;
 	grid-gap: 5%;
 	margin: auto;
 	width: 80%;
-	padding-top: 8%;
-	padding-bottom: 15%;
+	padding-top: 10%;
+	padding-bottom: 4%;
 
 	&__pointer
 	{
@@ -68,7 +69,6 @@ $orange:        #f89e0c;
 		&__headline
 		{
 			font-size: 3vw;
-			padding-top: -10%;
 		}
 	}
 }

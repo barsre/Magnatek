@@ -48,10 +48,10 @@
 <section class="maps__logo">
 	<img class="maps__logo__pointer" src="img/contact/pointer.png" alt="pointer logo">
 </section>
-<section class="maps__map">
-	<iframe src="https://www.google.com/maps/embed?pb" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
 </div>
+<section class="maps__map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.6068879099284!2d10.166039815944549!3d56.112019680650945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c403afc596077%3A0xa32e55fb63dd70!2sMagnatek+ApS!5e0!3m2!1sda!2sdk!4v1527071146102" width="100%" height="500vw" frameborder="0" style="border:0" allowfullscreen></iframe>
+</section>
 
 
 
@@ -60,15 +60,15 @@
 </body>
 
 <script src="js/script.js"></script>
-                
+
 <script>
     var Underline = document.createElement("DIV");
     var Linebreak = document.createElement("BR");
     document.getElementById("menubutton_4").appendChild(Linebreak);
     document.getElementById("menubutton_4").appendChild(Underline);
-    
+
     var Onpage = document.getElementById("menubutton_4");
     Onpage.classList.add("onpage");
-</script>                    
+</script>
 
 </html>
