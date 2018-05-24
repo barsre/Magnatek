@@ -10,12 +10,13 @@ $darkgrey:      #666;
 $orange:        #f89e0c;
 
 
-headline {
+.headline {
 	padding-top: 140px;
 	padding-bottom: 40px;
 	text-align: center;
 
-	__topic{
+	&__topic{
 		font-size: 3vw;
 		padding-bottom: 20px;
 	}
+}
