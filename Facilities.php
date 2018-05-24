@@ -19,6 +19,16 @@
 <section class="headline">
   <h1 class="headline__topic"> Facilities</h1>
 </section>
+<div class="facilities">
+	<section class="facilities__info">
+		<p class="facilities__info__text">Magnatek has expanded our facilities from 375m² to more than 1000m² and it includes space for development, production, storage, test and administration.
+At our facilities, we can test the performance of new X-ray sources together with different kinds of X-ray sensitive detectors and PC controlled scanning devices.The first feasibility studies of several of our customers successful projects, have been started in our laboratory.
+</p>
+	<img class="facilities__info__img" src="img/facilities/Billede1.jpg" alt="Facilities picture">
+	<img class="facilities__info__hus" src="img/facilities/hus.jpg" alt="facilities picture">
+	</section>
+
+</div>
 
 
 

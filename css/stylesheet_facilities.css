@@ -7,4 +7,20 @@
     font-size: 3vw;
     padding-bottom: 20px; }
 
+.facilities {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-gap: 5%;
+  margin: auto;
+  width: 80%; }
+  .facilities__info__text {
+    padding-left: 100px;
+    text-align: left; }
+  .facilities__info__img {
+    width: 180px;
+    text-align: right; }
+  .facilities__info__hus {
+    width: 180px;
+    text-align: right; }
+
 /*# sourceMappingURL=stylesheet_facilities.css.map */

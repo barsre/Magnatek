@@ -20,3 +20,29 @@ $orange:        #f89e0c;
 		padding-bottom: 20px;
 	}
 }
+
+.facilities
+{
+	display: grid;
+	grid-template-columns: 45% 55%;
+	grid-gap: 5%;
+	margin: auto;
+	width: 80%;
+	&__info
+	{
+		&__text{
+			padding-left: 100px;
+
+			text-align: left;
+		}
+		&__img{
+			width: 180px;
+			text-align: right;
+		}
+		&__hus
+		{
+			width: 180px;
+			text-align: right;
+		}
+	}
+}
