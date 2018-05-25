@@ -6,10 +6,13 @@
 	<meta charset="utf-8">
 	<title>Dom tree example</title>
 	
+    <! Stylesheets !>
     <link href="css/stylesheet_global.css" rel="stylesheet">
 	<link href="css/stylesheet_frontpage.css" rel="stylesheet">
 	
+    <! Fonts and Logos !>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     
 </head>
 
@@ -18,29 +21,21 @@
     <?php include 'includes/header.php';?>
     
     <section id="frontpage" class="frontpage">
-        <h1 class="frontpage__header">We modify our products to match your<br>needs the best way possible</h1>
-        <div class="frontpage__content">
-            <h1><b>25</b><br><div></div>years of experience in X-ray sources.</h1>
-            <img src="img/frontpage/pic1.gif">
-            <h1><b>3000</b><br><div></div>X-ray sources we have supplied the industry with.</h1>
+        <div class="frontpage__landingpage">
+            <h1 class="frontpage__landingpage__header">We modify our products to match your<br>needs the best way possible</h1>
+            <div class="frontpage__landingpage__content">
+                <h1><b>25</b><br><div></div>years of experience in X-ray sources.</h1>
+                <img src="img/frontpage/pic1.gif">
+                <h1><b>3000</b><br><div></div>X-ray sources we have supplied the industry with.</h1>
+            </div>
+        </div>
+
+        <div class="frontpage__product_button">
+            <button id="product_button" onclick="loadDoc('ajax/Productpage.html', ProductFunction)">SEE PRODUCTS</button>
         </div>
     </section>
     
-    <section id="product" class="product nodisplay">
-        <h1>Application Areas</h1>
-        <div class="product__categories">
-            <button id="category_1">Industrial measuring and analysis</button>
-            <button id="category_2">Medical Research</button>
-            <button id="category_3">Non-destructive testing and measuring</button>
-            <button id="category_4">Electronics circuit board inspection</button>
-            <button id="category_5">Security screening</button>
-            <button id="category_6">Food inspection & sorting</button>
-        </div>
-    </section>
     
-    <section class="product_button">
-        <button id="product_button" onclick="Open_product()">SEE PRODUCTS</button>
-    </section>
     
     <?php include 'includes/footer.php';?>
     
