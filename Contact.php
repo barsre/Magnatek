@@ -62,8 +62,13 @@
 <script src="js/script.js"></script>
 
 <script>
-    // Menu Button
-    document.getElementById("menubutton_4").classList.add("onpage");
+    var Underline = document.createElement("DIV");
+    var Linebreak = document.createElement("BR");
+    document.getElementById("menubutton_4").appendChild(Linebreak);
+    document.getElementById("menubutton_4").appendChild(Underline);
+
+    var Onpage = document.getElementById("menubutton_4");
+    Onpage.classList.add("onpage");
 </script>
 
 </html>

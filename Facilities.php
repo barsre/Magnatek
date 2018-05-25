@@ -15,7 +15,6 @@
 
 <body>
     <?php include 'includes/header.php';?>
-    <?php include 'includes/aboutmenu.php';?>
 
 <section class="headline">
   <h1 class="headline__topic"> Facilities</h1>
@@ -43,13 +42,5 @@ At our facilities, we can test the performance of new X-ray sources together wit
 </body>
 
 <script src="js/script.js"></script>
-    
-<script>
-    // Menu Button
-    document.getElementById("menubutton_3").classList.add("onpage");
-    
-    // Aboutmenu Button
-    document.getElementById("aboutmenu_3").classList.add("on");
-</script>
 
 </html>

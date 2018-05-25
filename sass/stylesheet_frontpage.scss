@@ -94,7 +94,6 @@ $orange:        #f89e0c;
         
             button:hover {
                 background-size: 120%;
-                cursor: pointer;
                 
                 h1 {
                     color: $lightgrey;
@@ -153,7 +152,6 @@ $orange:        #f89e0c;
             }
             
             button:hover {
-                cursor: pointer;
                 
                 i {
                     color: $lightgrey;
@@ -178,8 +176,6 @@ $orange:        #f89e0c;
                 padding-left: 0;
                 
                 a{
-                    cursor: pointer;
-                    
                     li {
                         vertical-align: top;
                         border-radius: 10px;

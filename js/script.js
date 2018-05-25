@@ -19,23 +19,6 @@ function ProductFunction(xhttp) {
     xhttp.responseText;
 }
 
-function OpenProductFunction(xhttp) {
-    document.getElementById("frontpage").innerHTML =
-    xhttp.responseText;
-    
-    document.getElementById("menubutton_1").classList.remove("onpage");
-    document.getElementById("menubutton_2").classList.add("onpage");
-}
-
-function CloseProductFunction(xhttp) {
-    document.getElementById("frontpage").innerHTML =
-    xhttp.responseText;
-    
-    document.getElementById("menubutton_2").classList.remove("onpage");
-    document.getElementById("menubutton_1").classList.add("onpage");
-}
-
-
 function SingleProductFunction(xhttp) {
     document.getElementById("product_right").innerHTML =
     xhttp.responseText;

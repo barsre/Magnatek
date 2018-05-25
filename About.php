@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title>Dom tree example</title>
 	
-	<link href="css/stylesheet_global.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
 	<link href="css/about.stylesheet.css" rel="stylesheet">
 	
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -16,8 +16,6 @@
 <body>
 
     <?php include 'includes/header.php';?>
-    
-    <?php include 'includes/aboutmenu.php';?>
     
       <section class="info">
 
@@ -38,13 +36,5 @@
 </body>
 
 <script src="js/script.js"></script>
-    
-<script>
-    // Menu Button
-    document.getElementById("menubutton_3").classList.add("onpage");
-    
-    // Aboutmenu Button
-    document.getElementById("aboutmenu_1").classList.add("on");
-</script>
 
 </html>
