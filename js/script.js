@@ -1,19 +1,27 @@
 // JavaScript Document
 
-var Frontpage = document.getElementById("frontpage");
-var Productpage = document.getElementById("product");
-var ProductButton = document.getElementById("product_button");
+// Ajax Product
 
-function Open_product() {
-    Frontpage.classList.add("nodisplay");
-    Productpage.classList.remove("nodisplay");
-    ProductButton.onclick = Close_product;
-    ProductButton.innerHTML = "CLOSE PRODUCTS";
+function loadDoc(url, cFunction) {
+    var xhttp;
+    xhttp=new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        cFunction(this);
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
 }
 
-function Close_product() {
-    Frontpage.classList.remove("nodisplay");
-    Productpage.classList.add("nodisplay");
-    ProductButton.onclick = Open_product;
-    ProductButton.innerHTML = "SEE PRODUCTS";
+function ProductFunction(xhttp) {
+    document.getElementById("frontpage").innerHTML =
+    xhttp.responseText;
 }
+
+function SingleProductFunction(xhttp) {
+    document.getElementById("product_right").innerHTML =
+    xhttp.responseText;
+    document.getElementById("product_right").style.background = "none";
+}
+

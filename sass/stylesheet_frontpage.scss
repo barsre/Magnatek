@@ -4,7 +4,7 @@
 
 // Colours
 
-$White:         #fff;
+$white:         #fff;
 $lightgrey:     #aaa;
 $darkgrey:      #666;
 $orange:        #f89e0c;
@@ -13,90 +13,295 @@ $orange:        #f89e0c;
 // Frontpage
 
 .frontpage {
-    padding-top: 10vw;
-    height: 27vw;
-    width: 80%;
-    margin: auto;
+    padding-top: 8vw;
+    height: 39vw;
     
-    &__header{
-        text-align: center;
+    &__landingpage {
         width: 80%;
         margin: auto;
-        font-weight: lighter;
-        font-size: 2.5vw;
-    }
+        height: 29vw;
     
-    &__content {
-        display: grid;
-        grid-template-columns: 30% 40% 30%;
-        
-        h1 {
-            font-weight: lighter;
-            font-size: 1.5vw;
+        &__header {
             text-align: center;
             width: 80%;
             margin: auto;
-            
-            b {
-                font-family: arial;
+            font-weight: lighter;
+            font-size: 2.5vw;
+        }
+    
+        &__content {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+        
+            h1 {
                 font-weight: lighter;
-                font-size: 1.7vw;
+                font-size: 1.5vw;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+            
+                b {
+                    font-family: arial;
+                    font-weight: lighter;
+                    font-size: 1.7vw;
+                }   
+            
+                div {
+                    margin: 10px auto;
+                    height: 3px;
+                    width: 20%;
+                    background-color: $orange;
+                }
+            }
+        
+            img {
+                width: 100%;
+            }
+        }
+    }   
+
+    &__product {
+        width: 65%;
+        margin: auto;
+        height: 29vw;
+        
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2vw;
+            color: $darkgrey;
+        }      
+    
+        &__categories {
+            display: grid;
+            grid-template-columns: 32% 32% 32%;
+            grid-gap: 10px 2%;
+            
+            button {
+                height: 180px;
+                background-size: 100%;
+                background-position: center;
+                border: none;
+                transition: 0.5s;
+            
+                h1{
+                    font-size: 1.3vw;
+                    font-weight: inherit;
+                    width: 70%;
+                    margin: auto;
+                    color: white;
+                }
+            }
+        
+            button:hover {
+                background-size: 120%;
+                
+                h1 {
+                    color: $lightgrey;
+                }    
+            }
+        
+            #category_1 {
+                background-image: url(../img/Product/Category1.jpg);
+            }
+        
+            #category_2 {
+                background-image: url(../img/Product/Category2.jpg);
+            }
+
+            #category_3 {
+                background-image: url(../img/Product/Category3.jpg);
+            }
+
+            #category_4 {
+                background-image: url(../img/Product/Category4.jpg);
+            }
+
+            #category_5 {
+                background-image: url(../img/Product/Category5.jpg);
+            }
+
+            #category_6 {
+                background-image: url(../img/Product/Category6.jpg);
+            }
+        }
+    }
+    
+    &__category {
+        width: 65%;
+        margin: auto;
+        height: 29vw;
+        display: grid;
+        grid-template-columns: 47% 47%;
+        grid-gap: 6%;
+        
+        &__left {
+            
+            button {
+                border: none;
+                
+                i {
+                    font-size: 1.85vw;
+                    color: $darkgrey;
+                }
+                
+                img {
+                    padding-left: 20px;
+                    height: 1.6vw;
+                    opacity: 0.6;
+                }
             }
             
-            div {
-                margin: 10px auto;
-                height: 3px;
-                width: 20%;
-                background-color: $orange;
+            button:hover {
+                
+                i {
+                    color: $lightgrey;
+                    transition: 0.5s;
+                }
+                
+                img {
+                    opacity: 0.4;
+                    transition: 0.5s;
+                }
+            }
+            
+            h1 {
+                font-weight: lighter;
+                font-size: 2vw;
+                padding: 1vw 0 0.5vw;
+                color: $darkgrey;
+            }
+            
+            ul {
+                list-style: none;
+                padding-left: 0;
+                
+                a{
+                    li {
+                        vertical-align: top;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        
+                        div {
+                            vertical-align: top;
+                            display: inline-block;
+                            height: 50px;
+                            width: 70px;
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 10px;
+                        }
+
+                        #CS60-04 { background-image: url(../img/Product/Product/CS60-04_1.jpg);}
+                        #MB40-7 { background-image: url(../img/Product/Product/MB40-7_1.jpg);}
+                        #MB70-6 { background-image: url(../img/Product/Product/MB70-6_1.jpg);}
+                        #MB120-5 { background-image: url(../img/Product/Product/MB120-5_1.jpg);}
+                        #MBG120-4 { background-image: url(../img/Product/Product/MBG120-4_1.jpg);}
+                        #MFX-160 { background-image: url(../img/Product/Product/MFX-160_1.jpg);}
+                        #MFX-225 { background-image: url(../img/Product/Product/MFX-225_1.jpg);}
+                        
+                        h2 {
+                            display: inline-block;
+                            font-family: arial;
+                            font-weight: lighter;
+                            font-size: 24px;
+                            padding: 11px 15px;
+                        }
+                    }
+                    
+                    li:hover {
+                        transition: 0.5s;
+                        background-color: $orange;
+                    }
+                    
+                    
+                }
             }
         }
         
-        img {
+        &__right {
             width: 100%;
+            height: 27vw;
+            max-height: 27vw;
+            background-size: cover;
+            background-position: center;
+            
+            h3 {
+                font-weight: lighter;
+                font-size: 1.3vw;
+                line-height: 120%;
+                color: $white;
+                padding: 1vw;
+            }
+            
+            // In Product
+            
+            &__content {
+                height: 27vw;
+                
+                div {
+                    height: 15vw;
+                    width: 100%;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                h2 {
+                    font-family: arial;
+                    font-size: 2vw;
+                    font-weight: lighter;
+                    padding-top: 0.5vw;
+                }
+
+                p {
+                    padding-top: 0.5vw;
+                }
+            }
+            
+            button {
+                color: $orange;
+                padding: 10px 0;
+                margin-left: 25%;
+                margin-top: 0.5vw;
+                border-radius: 50px;
+                border-color: $orange;
+                font-size: 1vw;
+                transition: 0.5s;
+                width: 50%;
+            }
+
+            button:hover {
+                background-color: $orange;
+                color: black;
+            }
+            
+            #CS60-04 { background-image: url(../img/Product/Product/CS60-04_1.jpg);}
+            #MB40-7 { background-image: url(../img/Product/Product/MB40-7_1.jpg);}
+            #MB70-6 { background-image: url(../img/Product/Product/MB70-6_1.jpg);}
+            #MB120-5 { background-image: url(../img/Product/Product/MB120-5_1.jpg);}
+            #MBG120-4 { background-image: url(../img/Product/Product/MBG120-4_1.jpg);}
+            #MFX-160 { background-image: url(../img/Product/Product/MFX-160_1.jpg);}
+            #MFX-225 { background-image: url(../img/Product/Product/MFX-225_1.jpg);}
         }
     }
-}
 
-.product {
-    padding-top: 10vw;
-    height: 27vw;
-    width: 70%;
-    margin: auto;
-    
-    h1 {
-        margin-bottom: 10px;
-        font-size: 2vw;
-        color: $darkgrey;
-    }
-    
-    &__categories {
-        display: grid;
-        grid-template-columns: 32% 32% 32%;
-        grid-gap: 10px 2%;
-        
+    &__product_button {
+        text-align: center;
+
         button {
-            height: 150px;
+            color: $orange;
+            padding: 10px 40px;
+            margin: 3vw 0 4vw;
+            border-radius: 50px;
+            border-color: $orange;
+            font-size: 1.4vw;
+            transition: 0.5s;
+            width: 20%;
         }
-    }
-}
 
-.product_button {
-    text-align: center;
-    
-    button {
-        color: $orange;
-        padding: 10px 40px;
-        margin: 3vw 0 4vw;
-        border-radius: 50px;
-        border-color: $orange;
-        font-size: 1.4vw;
-        transition: 0.5s;
-        width: 20%;
-    }
-    
-    button:hover {
-        background-color: $orange;
-        color: black;
+        button:hover {
+            background-color: $orange;
+            color: black;
+        }
     }
 }
 

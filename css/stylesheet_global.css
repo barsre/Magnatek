@@ -35,14 +35,14 @@ header {
     display: inline-block; }
   header img {
     width: 20%;
-    margin: 10px 80px;
+    margin: 10px 80px 0;
     transition: 0.5s; }
   header img:hover {
     opacity: 0.5; }
   header ul {
     float: right;
     list-style: none;
-    margin: 40px 3%; }
+    margin: 40px 3% 0; }
     header ul .onpage {
       color: #f89e0c; }
       header ul .onpage div {
@@ -74,7 +74,7 @@ header {
   padding: 30px 10% 10px;
   color: white; }
   .footer ul {
-    list-style: none; }
+    list-style: disc; }
     .footer ul a:hover {
       transition: 0.5s;
       color: #f89e0c; }
