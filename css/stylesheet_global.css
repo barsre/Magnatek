@@ -103,4 +103,19 @@ header {
     height: 200px;
     margin-bottom: 0; }
 
+.Aboutmenu {
+  position: fixed;
+  z-index: 2;
+  margin-top: 7vw;
+  margin-left: 3vw; }
+  .Aboutmenu ul {
+    list-style: none; }
+    .Aboutmenu ul a li {
+      padding-bottom: 0.5vw; }
+    .Aboutmenu ul a:hover {
+      transition: 0.5s;
+      color: #f89e0c; }
+    .Aboutmenu ul .on {
+      color: #f89e0c; }
+
 /*# sourceMappingURL=stylesheet_global.css.map */

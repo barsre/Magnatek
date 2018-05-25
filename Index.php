@@ -31,7 +31,7 @@
         </div>
 
         <div class="frontpage__product_button">
-            <button id="product_button" onclick="loadDoc('ajax/Productpage.html', ProductFunction)">SEE PRODUCTS</button>
+            <button id="product_button" onclick="loadDoc('ajax/Productpage.html', OpenProductFunction)">SEE PRODUCTS</button>
         </div>
     </section>
     
@@ -44,13 +44,8 @@
 <script src="js/script.js"></script>
 
 <script>
-    var Underline = document.createElement("DIV");
-    var Linebreak = document.createElement("BR");
-    document.getElementById("menubutton_1").appendChild(Linebreak);
-    document.getElementById("menubutton_1").appendChild(Underline);
-    
-    var Onpage = document.getElementById("menubutton_1");
-    Onpage.classList.add("onpage");
+    // Menu Button
+    document.getElementById("menubutton_1").classList.add("onpage");
 </script>    
     
 </html>

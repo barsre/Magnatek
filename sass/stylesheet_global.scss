@@ -168,4 +168,28 @@ header {
     }
 }
 
-
+.Aboutmenu {
+    position: fixed;
+    z-index: 2;
+    margin-top: 7vw;
+    margin-left: 3vw;
+    
+    ul {
+        list-style: none;
+        
+        a {
+            li {
+                padding-bottom: 0.5vw;
+            }
+        }
+        
+        a:hover {
+            transition: 0.5s;
+            color: $orange;
+        }
+        
+        .on {
+            color: $orange;
+        }
+    }
+}
