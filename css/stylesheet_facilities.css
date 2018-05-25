@@ -9,18 +9,17 @@
 
 .facilities {
   display: grid;
-  grid-template-columns: 45% 55%;
-  grid-gap: 5%;
+  grid-template-columns: 45% 20%;
+  grid-gap: 20%;
   margin: auto;
-  width: 80%; }
+  width: 80%;
+  padding-bottom: 100px; }
   .facilities__info__text {
-    padding-left: 100px;
-    text-align: left; }
+    padding-left: 200px; }
   .facilities__info__img {
-    width: 180px;
-    text-align: right; }
+    width: 140%;
+    padding-bottom: 20px; }
   .facilities__info__hus {
-    width: 180px;
-    text-align: right; }
+    width: 140%; }
 
 /*# sourceMappingURL=stylesheet_facilities.css.map */
