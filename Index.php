@@ -48,6 +48,10 @@
 <script>
     // Menu Button
     document.getElementById("menubutton_1").classList.add("onpage");
+    
+    if (window.location.hash.substr(1) === "products") {
+        loadDoc('ajax/Productpage.html', OpenProductFunction)
+    }
 </script>    
     
 </html>
