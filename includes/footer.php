@@ -23,6 +23,6 @@ echo '<footer class="footer">
                 <li>E-mail: info@magnatek.dk </li>
             </ul>
         </div>
-        <img src="img/general/Footer_image.png">
+        <img src="img/general/Footer_image.png" alt="denmark hoejbjerg">
     </footer>';
 ?>
