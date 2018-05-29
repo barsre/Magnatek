@@ -4,21 +4,25 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Dom tree example</title>
-	
+	<meta name="description" content="Magnatek offers a wide range of highly stabilized, high frequency, high voltage portable x-ray generators for industrial and medical applications.">
+	<meta name="keywords" content="x-ray generators, x-ray sources, x-ray non-destructive testing, x-ray equipment, x-ray microfocus">
+	<meta name="author" content="Jacob barsøe, Katrine Nielsen, Jeevith Mohanakumar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>History | Magnatek</title>
+
 	<link href="css/stylesheet_global.css" rel="stylesheet">
 	<link href="css/stylesheet_history.css" rel="stylesheet">
-	
+
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    
+
 </head>
 
 <body>
 
     <?php include 'includes/header.php';?>
-    
+
     <?php include 'includes/aboutmenu.php';?>
-    
+
     <section class="history">
         <h1 class="history__heading">History</h1>
         <div class="history__section history__white">
@@ -48,11 +52,11 @@
 </body>
 
 <script src="js/script.js"></script>
-    
+
 <script>
     // Menu Button
     document.getElementById("menubutton_3").classList.add("onpage");
-    
+
     // Aboutmenu Button
     document.getElementById("aboutmenu_2").classList.add("on");
 </script>

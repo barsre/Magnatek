@@ -4,7 +4,11 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Contact Page</title>
+	<meta name="description" content="Magnatek offers a wide range of highly stabilized, high frequency, high voltage portable x-ray generators for industrial and medical applications.">
+	<meta name="keywords" content="x-ray generators, x-ray sources, x-ray non-destructive testing, x-ray equipment, x-ray microfocus">
+	<meta name="author" content="Jacob barsøe, Katrine Nielsen, Jeevith Mohanakumar">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Magnatek</title>
 
 	<link href="css/stylesheet_global.css" rel="stylesheet">
     <link href="css/stylesheet_contact.css" rel="stylesheet">
