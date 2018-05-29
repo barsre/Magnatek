@@ -1,0 +1,42 @@
+/* CSS Document */
+.history {
+  padding-top: 9vw; }
+  .history__heading {
+    font-weight: lighter;
+    margin: auto;
+    width: 60%;
+    font-size: 2.5vw; }
+  .history__section {
+    padding: 4vw 20%; }
+    .history__section .txt {
+      line-height: 150%;
+      font-size: 1.4vw; }
+    .history__section__pic div {
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 200px; }
+    .history__section__pic #pic1 {
+      background-image: url(../img/history/pic1.jpg); }
+    .history__section__pic #pic2 {
+      background-image: url(../img/history/pic2.jpg); }
+    .history__section__pic #pic3 {
+      background-image: url(../img/history/pic3.jpg); }
+    .history__section__pic #pic4 {
+      background-image: url(../img/history/pic4.jpg); }
+    .history__section__pic p {
+      font-size: 1vw;
+      font-style: italic; }
+  .history__grey {
+    background-color: #aaa;
+    display: grid;
+    grid-template-columns: 40% 60%; }
+    .history__grey .txt {
+      padding-left: 3vw; }
+  .history__white {
+    display: grid;
+    grid-template-columns: 60% 40%; }
+    .history__white .txt {
+      padding-right: 3vw; }
+
+/*# sourceMappingURL=stylesheet_history.css.map */

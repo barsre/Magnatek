@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+// Colours
+
+$White:         #fff;
+$lightgrey:     #aaa;
+$darkgrey:      #666;
+$orange:        #f89e0c;
+
+
+// Page
+
+.history {
+    padding-top: 9vw;
+    
+    &__heading {
+        font-weight: lighter;
+        margin: auto;
+        width: 60%;
+        font-size: 2.5vw;
+    }
+
+    &__section {
+        padding: 4vw 20%;
+        
+        .txt {
+            line-height: 150%;
+            font-size: 1.4vw;
+        }
+        
+        &__pic {
+            
+            div {
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 200px;
+            }
+            
+            #pic1 {background-image: url(../img/history/pic1.jpg);}
+            #pic2 {background-image: url(../img/history/pic2.jpg);}
+            #pic3 {background-image: url(../img/history/pic3.jpg);}
+            #pic4 {background-image: url(../img/history/pic4.jpg);}
+            
+            p {
+                font-size: 1vw;
+                font-style: italic;
+            }
+        }
+    }
+
+    &__grey {
+        background-color: $lightgrey;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        
+        .txt {
+            padding-left: 3vw;
+        }
+    }
+    
+    &__white {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        
+        .txt {
+            padding-right: 3vw;
+        }
+    }
+}

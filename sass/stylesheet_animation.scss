@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+// Colours
+
+$white:         #fff;
+$lightgrey:     #aaa;
+$darkgrey:      #666;
+$orange:        #f89e0c; 
+
+
+// Animation
+
+@mixin animation {
+    position: absolute;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+
+.animation {
+    margin-top: 8vh;
+    position: absolute;
+    background-color: grey;
+    width: 100%;
+    z-index: 1;
+    
+    &__box {
+        position: absolute;
+        width: 100%;
+        
+        &__text {
+            position: absolute;
+            width: 50vw;
+            margin: 10vh 25vw 0;
+            text-align: center;
+            font-size: 1.5vw;
+            
+            &__1-1 {
+                @include animation;
+                animation-name: text_1-1;
+                width: 100%;
+            }
+            &__1-2 {
+                @include animation;
+                animation-name: text_1-2;
+                width: 100%;
+            }
+            &__2-1 {
+                @include animation;
+                animation-name: text_2-1;
+                width: 100%;
+            }
+            &__3-1 {
+                @include animation;
+                animation-name: text_3-1;
+                width: 100%;
+            }
+            &__4-1 {
+                @include animation;
+                animation-name: text_4-1;
+                width: 100%;
+            }
+            &__5-1 {
+                @include animation;
+                animation-name: text_5-1;
+                width: 100%;
+            }
+            &__5-2 {
+                @include animation;
+                animation-name: text_5-2;
+                width: 100%;
+            }
+        }
+        
+        &__image {
+            @include animation;
+            background-size: cover;
+            background-position: center;
+            background-color: blue;
+            height: 40vh;
+            width: 35vw;
+            margin-top: 28vh;
+            animation-name: image;
+        }
+        
+        &__line {
+            @include animation;
+            background-color: $lightgrey;
+            margin-top: 75vh;
+            height: 1vh;
+            width: 50vw;
+            margin-left: 25vw;
+            animation-name: line;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes text_1-1 {
+    0% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -5vh;
+    } 2% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -5vh;
+    } 6% {
+        opacity: 1;
+        font-size: 1.5vw;
+        top: 0;
+    } 18% {
+        opacity: 1;
+    } 20% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 0;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 0;
+    }
+}
+@keyframes text_1-2 {
+    0% {
+        opacity: 0;
+    } 6% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: 0vh;
+    } 10% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 5vh;
+    } 18% {
+        opacity: 1;
+    } 20% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 5vh;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 5vh;
+    }
+}
+@keyframes text_2-1 {
+    0% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -3vh;
+    } 22% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: -3vh;
+    } 26% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 2vh;
+    } 38% {
+        opacity: 1;
+    } 40% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    }
+}
+@keyframes text_3-1 {
+    0% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -3vh;
+    } 42% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: -3vh;
+    } 46% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 2vh;
+    } 58% {
+        opacity: 1;
+    } 60% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    }
+}
+@keyframes text_4-1 {
+    0% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -3vh;
+    } 62% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: -3vh;
+    } 66% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 2vh;
+    } 78% {
+        opacity: 1;
+    } 80% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 2vh;
+    }
+}
+@keyframes text_5-1 {
+    0% {
+        opacity: 0;
+        font-size: 0.375vw;
+        top: -5vh;
+    } 82% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: -5vh;
+    } 86% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 0;
+    } 98% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 0;
+    } 
+}
+@keyframes text_5-2 {
+    0% {
+        opacity: 0;
+    } 86% {
+        opacity: 0;
+        font-size: 0.375vw;
+        margin: 0 37.5%;
+        width: 25%;
+        top: 0vh;
+    } 90% {
+        opacity: 1;
+        font-size: 1.5vw;
+        margin: 0;
+        width: 100%;
+        top: 5vh;
+    } 98% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+        font-size: 1.5vw;
+        top: 5vh;
+    } 
+}
+@keyframes image {
+    0% {
+        opacity: 0;
+        margin-left: 32.5vw;
+        background-image: url(../img/history/pic1.jpg);
+    } 2% {
+        opacity: 0;
+        background-image: url(../img/history/pic1.jpg);
+    } 6% {
+        opacity: 1;
+    } 18% {
+        opacity: 1;
+        margin-left: 32.5vw;
+    } 20% {
+        opacity: 0;
+        margin-left: 60vw;
+        background-image: url(../img/history/pic1.jpg);
+    } 22% {
+        opacity: 0;
+        margin-left: 32.5vw;
+        background-image: url(../img/history/MB70-6_1.jpg);
+    } 26% {
+        opacity: 1;
+    } 38% {
+        opacity: 1;
+        margin-left: 32.5vw;
+    } 40% {
+        opacity: 0;
+        margin-left: 60vw;
+        background-image: url(../img/history/MB70-6_1.jpg);
+    } 42% {
+        opacity: 0;
+        margin-left: 32.5vw;
+        background-image: url(../img/history/pic2.jpg);
+    } 46% {
+        opacity: 1;
+    } 58% {
+        opacity: 1;
+        margin-left: 32.5vw;
+    } 60% {
+        opacity: 0;
+        margin-left: 60vw;
+        background-image: url(../img/history/pic2.jpg);
+    } 62% {
+        opacity: 0;
+        margin-left: 30vw;
+        background-image: url(../img/history/pic3.jpg);
+    } 66% {
+        opacity: 1;
+    } 78% {
+        opacity: 1;
+        margin-left: 30vw;
+    } 80% {
+        opacity: 0;
+        margin-left: 60vw;
+        background-image: url(../img/history/pic3.jpg);
+    } 82% {
+        opacity: 0;
+        margin-left: 32.5vw;
+        background-image: url(../img/history/pic4.jpg);
+    } 86% {
+        opacity: 1;
+    } 98% {
+        opacity: 1;
+        margin-left: 32.5vw;
+    } 100% {
+        opacity: 0;
+        margin-left: 60vw;
+        background-image: url(../img/history/pic4.jpg);
+    }
+}
+@keyframes line {
+    0% {
+        width: 0vw;
+    } 100% {
+        width: 50vw;
+    }
+}

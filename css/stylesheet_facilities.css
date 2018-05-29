@@ -1,25 +1,30 @@
 /* CSS Document */
-.headline {
-  padding-top: 140px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .headline__topic {
-    font-size: 3vw;
-    padding-bottom: 20px; }
-
-.facilities {
-  display: grid;
-  grid-template-columns: 45% 20%;
-  grid-gap: 20%;
+.info {
+  padding-top: 10vw;
   margin: auto;
-  width: 80%;
-  padding-bottom: 100px; }
-  .facilities__info__text {
-    padding-left: 200px; }
-  .facilities__info__img {
-    width: 140%;
-    padding-bottom: 20px; }
-  .facilities__info__hus {
-    width: 140%; }
+  margin-bottom: 5vw;
+  width: 60%; }
+  .info__heading {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    margin-bottom: 3vw; }
+  .info__content {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-gap: 5%; }
+    .info__content__txt {
+      font-size: 1.3vw;
+      line-height: 1.5; }
+    .info__content__images {
+      width: 100%; }
+      .info__content__images__pic {
+        width: 100%;
+        height: 15vw;
+        background-size: cover;
+        background-position: center; }
+      .info__content__images #pic1 {
+        background-image: url(../img/facilities/Billede1.jpg); }
+      .info__content__images #pic2 {
+        background-image: url(../img/facilities/hus.JPG); }
 
 /*# sourceMappingURL=stylesheet_facilities.css.map */

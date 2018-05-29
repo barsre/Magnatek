@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+// Colours
+
+$white:         #fff;
+$lightgrey:     #aaa;
+$darkgrey:      #666;
+$orange:        #f89e0c;
+
+
+// Page
+
+.info {
+    padding-top: 93vh;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 5vw;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-gap: 5%;
+    
+    &__txt {
+        width: 100%;
+        font-size: 1.2vw;
+        line-height: 1.5;
+    }
+    
+    &__pic {
+        background-image: url(../img/about/magnatek.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+}

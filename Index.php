@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html> 
 
 <head>
 
@@ -9,7 +9,7 @@
     <! Stylesheets !>
     <link href="css/stylesheet_global.css" rel="stylesheet">
 	<link href="css/stylesheet_frontpage.css" rel="stylesheet">
-	
+	 
     <! Fonts and Logos !>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -19,6 +19,8 @@
 <body>
 
     <?php include 'includes/header.php';?>
+    
+    <section id="ProductMore" class="ProductMore nodisplay"></section>
     
     <section id="frontpage" class="frontpage">
         <div class="frontpage__landingpage">
@@ -31,7 +33,7 @@
         </div>
 
         <div class="frontpage__product_button">
-            <button id="product_button" onclick="loadDoc('ajax/Productpage.html', ProductFunction)">SEE PRODUCTS</button>
+            <button id="product_button" onclick="loadDoc('ajax/Productpage.html', OpenProductFunction)">SEE PRODUCTS</button>
         </div>
     </section>
     
@@ -44,13 +46,8 @@
 <script src="js/script.js"></script>
 
 <script>
-    var Underline = document.createElement("DIV");
-    var Linebreak = document.createElement("BR");
-    document.getElementById("menubutton_1").appendChild(Linebreak);
-    document.getElementById("menubutton_1").appendChild(Underline);
-    
-    var Onpage = document.getElementById("menubutton_1");
-    Onpage.classList.add("onpage");
+    // Menu Button
+    document.getElementById("menubutton_1").classList.add("onpage");
 </script>    
     
 </html>

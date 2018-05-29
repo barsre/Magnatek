@@ -57,8 +57,10 @@
           margin: auto;
           color: white; }
       .frontpage__product__categories button:hover {
-        background-size: 120%; }
+        background-size: 120%;
+        cursor: pointer; }
         .frontpage__product__categories button:hover h1 {
+          transition: 0.5s;
           color: #aaa; }
       .frontpage__product__categories #category_1 {
         background-image: url(../img/Product/Category1.jpg); }
@@ -88,12 +90,14 @@
         padding-left: 20px;
         height: 1.6vw;
         opacity: 0.6; }
-    .frontpage__category__left button:hover i {
-      color: #aaa;
-      transition: 0.5s; }
-    .frontpage__category__left button:hover img {
-      opacity: 0.4;
-      transition: 0.5s; }
+    .frontpage__category__left button:hover {
+      cursor: pointer; }
+      .frontpage__category__left button:hover i {
+        color: #aaa;
+        transition: 0.5s; }
+      .frontpage__category__left button:hover img {
+        opacity: 0.4;
+        transition: 0.5s; }
     .frontpage__category__left h1 {
       font-weight: lighter;
       font-size: 2vw;
@@ -102,41 +106,44 @@
     .frontpage__category__left ul {
       list-style: none;
       padding-left: 0; }
-      .frontpage__category__left ul a li {
-        vertical-align: top;
-        border-radius: 10px;
-        margin-bottom: 10px; }
-        .frontpage__category__left ul a li div {
+      .frontpage__category__left ul a {
+        cursor: pointer; }
+        .frontpage__category__left ul a li {
           vertical-align: top;
-          display: inline-block;
-          height: 50px;
-          width: 70px;
-          background-size: cover;
-          background-position: center;
-          border-radius: 10px; }
-        .frontpage__category__left ul a li #CS60-04 {
-          background-image: url(../img/Product/Product/CS60-04_1.jpg); }
-        .frontpage__category__left ul a li #MB40-7 {
-          background-image: url(../img/Product/Product/MB40-7_1.jpg); }
-        .frontpage__category__left ul a li #MB70-6 {
-          background-image: url(../img/Product/Product/MB70-6_1.jpg); }
-        .frontpage__category__left ul a li #MB120-5 {
-          background-image: url(../img/Product/Product/MB120-5_1.jpg); }
-        .frontpage__category__left ul a li #MBG120-4 {
-          background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
-        .frontpage__category__left ul a li #MFX-160 {
-          background-image: url(../img/Product/Product/MFX-160_1.jpg); }
-        .frontpage__category__left ul a li #MFX-225 {
-          background-image: url(../img/Product/Product/MFX-225_1.jpg); }
-        .frontpage__category__left ul a li h2 {
-          display: inline-block;
-          font-family: arial;
-          font-weight: lighter;
-          font-size: 24px;
-          padding: 11px 15px; }
-      .frontpage__category__left ul a li:hover {
-        transition: 0.5s;
-        background-color: #f89e0c; }
+          border-radius: 10px;
+          margin-bottom: 10px;
+          background-color: lightgrey; }
+          .frontpage__category__left ul a li div {
+            vertical-align: top;
+            display: inline-block;
+            height: 50px;
+            width: 70px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px; }
+          .frontpage__category__left ul a li #CS60-04 {
+            background-image: url(../img/Product/Product/CS60-04_1.jpg); }
+          .frontpage__category__left ul a li #MB40-7 {
+            background-image: url(../img/Product/Product/MB40-7_1.jpg); }
+          .frontpage__category__left ul a li #MB70-6 {
+            background-image: url(../img/Product/Product/MB70-6_1.jpg); }
+          .frontpage__category__left ul a li #MB120-5 {
+            background-image: url(../img/Product/Product/MB120-5_1.jpg); }
+          .frontpage__category__left ul a li #MBG120-4 {
+            background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
+          .frontpage__category__left ul a li #MFX-160 {
+            background-image: url(../img/Product/Product/MFX-160_1.jpg); }
+          .frontpage__category__left ul a li #MFX-225 {
+            background-image: url(../img/Product/Product/MFX-225_1.jpg); }
+          .frontpage__category__left ul a li h2 {
+            display: inline-block;
+            font-family: arial;
+            font-weight: lighter;
+            font-size: 24px;
+            padding: 11px 15px; }
+        .frontpage__category__left ul a li:hover {
+          transition: 0.5s;
+          background-color: #f89e0c; }
     .frontpage__category__right {
       width: 100%;
       height: 27vw;
@@ -204,5 +211,76 @@
     .frontpage__product_button button:hover {
       background-color: #f89e0c;
       color: black; }
+
+.ProductMore {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+  .ProductMore__close {
+    margin-left: 82vw;
+    margin-top: 3vh;
+    width: 4vw;
+    height: 8vh;
+    font-size: 2vw;
+    color: white;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background-color: #aaa; }
+  .ProductMore__block {
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    background-color: white;
+    -webkit-box-shadow: 4px 9px 14px 6px #303030;
+    -moz-box-shadow: 4px 9px 14px 6px #303030;
+    box-shadow: 4px 9px 14px 6px #303030;
+    padding: 2.5vw 5vw;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-gap: 6%; }
+    .ProductMore__block__left__img {
+      width: 100%;
+      height: 40vh;
+      background-size: cover;
+      background-position: center; }
+    .ProductMore__block__left h1 {
+      font-family: arial;
+      font-size: 3vw;
+      font-weight: lighter;
+      padding: 10px 0 20px 10px; }
+    .ProductMore__block__left__stats {
+      display: grid;
+      grid-template-columns: 30% 70%; }
+      .ProductMore__block__left__stats i {
+        padding-bottom: 5px; }
+      .ProductMore__block__left__stats h3 {
+        font-weight: lighter; }
+    .ProductMore__block__left #CS60-04 {
+      background-image: url(../img/Product/Product/CS60-04_1.jpg); }
+    .ProductMore__block__left #MB40-7 {
+      background-image: url(../img/Product/Product/MB40-7_1.jpg); }
+    .ProductMore__block__left #MB70-6 {
+      background-image: url(../img/Product/Product/MB70-6_1.jpg); }
+    .ProductMore__block__left #MB120-5 {
+      background-image: url(../img/Product/Product/MB120-5_1.jpg); }
+    .ProductMore__block__left #MBG120-4 {
+      background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
+    .ProductMore__block__left #MFX-160 {
+      background-image: url(../img/Product/Product/MFX-160_1.jpg); }
+    .ProductMore__block__left #MFX-225 {
+      background-image: url(../img/Product/Product/MFX-225_1.jpg); }
+    .ProductMore__block__right {
+      font-size: 1.3vw;
+      line-height: 1.3; }
+      .ProductMore__block__right a {
+        color: #f89e0c;
+        padding: 0 5px;
+        transition: 0.5s; }
+      .ProductMore__block__right a:hover {
+        color: white;
+        background-color: #f89e0c;
+        border-radius: 50px; }
 
 /*# sourceMappingURL=stylesheet_frontpage.css.map */
