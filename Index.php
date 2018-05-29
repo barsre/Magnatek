@@ -1,9 +1,6 @@
 <!doctype html>
-<<<<<<< HEAD
 <html lang="en">
-=======
-<html>
->>>>>>> 2e69262dd5c90e6e28aeeb6686e4f968a6d66e6a
+
 
 <head>
 
