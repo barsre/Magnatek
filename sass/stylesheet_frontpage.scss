@@ -340,6 +340,11 @@ $orange:        #f89e0c;
         border: none;
         border-radius: 10px 10px 0 0;
         background-color: $lightgrey;
+        transition: 0.5s;
+    }
+    
+    &__close:hover {
+       color: $orange; 
     }
     
     &__block {

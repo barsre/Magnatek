@@ -227,7 +227,10 @@
     color: white;
     border: none;
     border-radius: 10px 10px 0 0;
-    background-color: #aaa; }
+    background-color: #aaa;
+    transition: 0.5s; }
+  .ProductMore__close:hover {
+    color: #f89e0c; }
   .ProductMore__block {
     width: 70vw;
     height: 70vh;
