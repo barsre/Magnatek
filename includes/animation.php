@@ -1,5 +1,4 @@
-<?php
-echo '<section class="animation">
+<section class="animation">
         <div class="animation__box">
             <div class="animation__box__text">
                 <p class="animation__box__text__1-1">Magnatek was founded in 1984 by Lars Peter Magnussen</p>
@@ -13,5 +12,4 @@ echo '<section class="animation">
             <div class="animation__box__image"></div>
             <div class="animation__box__line"></div>
         </div>
-    </section>';
-?> 
+    </section>

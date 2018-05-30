@@ -1,5 +1,4 @@
-<?php
-echo '<footer class="footer">
+<footer class="footer">
         <ul class="footer__links">
             <a href="Index.php"><li>Frontpage</li></a>
             <a href="Index.php"><li>Products</li></a>
@@ -24,5 +23,4 @@ echo '<footer class="footer">
             </ul>
         </div>
         <img src="img/general/Footer_image.png" alt="denmark hoejbjerg">
-    </footer>';
-?>
+    </footer>
