@@ -70,3 +70,43 @@ $orange:        #f89e0c;
         }
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    .history {
+        padding-top: 32vh;
+
+        &__heading {
+            width: 90%;
+            font-size: 10vw;
+            padding-bottom: 5vh;
+        }
+
+        &__section {
+            padding: 0;
+
+            .txt {
+                font-size: 4vw;
+                padding: 4vw 5vw;
+            }
+
+            &__pic {
+
+                div {
+                    height: 60vh;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+
+        &__grey {
+            grid-template-columns: 50% 50%;
+        }
+
+        &__white {
+            grid-template-columns: 50% 50%;
+        }
+    }
+}

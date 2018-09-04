@@ -1,7 +1,12 @@
 /* CSS Document */
+html {
+  margin: 0;
+  max-width: 100vw; }
+
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  max-width: 100vw; }
 
 a {
   color: inherit;
@@ -71,9 +76,12 @@ header {
 .footer {
   background-color: #666;
   display: grid;
-  grid-template-columns: 30% 50% 20%;
-  padding: 30px 10% 10px;
-  color: white; }
+  grid-template-columns: 20% 50% 20%;
+  padding: 20px 5% 10px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 3; }
   .footer ul {
     list-style: disc; }
     .footer ul a:hover {
@@ -89,7 +97,7 @@ header {
     .footer__contact a {
       font-size: 1.4vw; }
     .footer__contact div {
-      width: 70%;
+      width: 50%;
       height: 2px;
       margin: 15px 0 5px;
       background-color: white; }
@@ -97,9 +105,10 @@ header {
       padding-left: 0;
       display: inline-block;
       vertical-align: top;
-      width: 35%;
+      width: 30%;
       line-height: 1.4;
-      font-size: 1.1vw; }
+      font-size: 1.1vw;
+      list-style: none; }
   .footer img {
     height: 200px;
     margin-bottom: 0; }
@@ -110,7 +119,8 @@ header {
   margin-top: 7vw;
   margin-left: 3vw; }
   .Aboutmenu ul {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.3vw; }
     .Aboutmenu ul a li {
       padding-bottom: 0.5vw; }
     .Aboutmenu ul a:hover {
@@ -118,5 +128,68 @@ header {
       color: #f89e0c; }
     .Aboutmenu ul .on {
       color: #f89e0c; }
+
+/* Mobile resolution */
+@media only screen and (max-width: 1100px) {
+  header {
+    background-color: transparent;
+    position: absolute; }
+    header img {
+      width: 40%;
+      margin: 5vw 0 0 5vw; }
+    header ul {
+      margin: 6vw 10vw 0; }
+      header ul .onpage {
+        color: #f89e0c; }
+        header ul .onpage div {
+          height: 0;
+          width: 0; }
+      header ul a {
+        display: block;
+        margin: 3vw 0;
+        font-size: 3.5vw;
+        text-align: right; }
+
+  .Aboutmenu {
+    position: absolute;
+    margin-top: 23vh;
+    margin-left: 0;
+    width: 100%; }
+    .Aboutmenu ul {
+      border: solid;
+      border-width: 2px 0 0 0;
+      border-color: #f89e0c;
+      padding-top: 3vh;
+      margin-right: 10vw;
+      text-align: right;
+      float: right; }
+      .Aboutmenu ul a li {
+        font-size: 3.5vw;
+        padding-bottom: 6vw; }
+
+  .footer {
+    grid-template-columns: 40% 60%;
+    padding: 50px 5% 10px; }
+    .footer__links {
+      font-size: 5vw; }
+    .footer__contact {
+      margin-top: 10px;
+      line-height: 1.2; }
+      .footer__contact a {
+        font-size: 4vw; }
+      .footer__contact div {
+        width: 100%;
+        height: 2px;
+        margin: 15px 0 5px;
+        background-color: white; }
+      .footer__contact ul {
+        padding-left: 0;
+        display: block;
+        vertical-align: top;
+        width: 100%;
+        line-height: 1.4;
+        font-size: 4vw; }
+    .footer img {
+      display: none; } }
 
 /*# sourceMappingURL=stylesheet_global.css.map */

@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document */ 
 
 
 // Colours
@@ -30,23 +30,16 @@ $orange:        #f89e0c;
 	grid-gap: 5%;
 	margin: auto;
 	width: 80%;
-
-	&__logo
-{
-	text-align: center;
-	&__phone
-	{
-		width: 180px;
-	}
-	&__email
-	{
-		width: 180px;
-	}
-	&__fax
-	{
-		width: 180px;
-	}
-}
+        
+	&__logo {
+	    text-align: center;
+        
+        i {
+            color: $orange;
+            font-size: 25vh; 
+            padding-bottom: 5vh;
+        }
+    }
 }
 
 .maps {
@@ -59,12 +52,11 @@ $orange:        #f89e0c;
 	padding-top: 10%;
 	padding-bottom: 4%;
 
-
-	&__logo__pointer
-	{
-		width: 150px;
-
-	}
+    i {
+        color: $orange;
+        font-size: 25vh; 
+    }
+    
 	&__header
 	{
 		text-align: right;
@@ -73,4 +65,60 @@ $orange:        #f89e0c;
 			font-size: 3vw;
 		}
 	}
+}
+
+@media only screen and (max-width: 1100px) {
+    .headline {
+        padding-top: 15vh;
+        padding-left: 5vw;
+        text-align: left;
+
+        h1{
+            font-size: 5vw;
+        }
+
+    }
+
+    .contact {
+        display: block;
+        margin: auto;
+        width: 80%;
+
+        &__logo {
+            text-align: center;
+            padding-bottom: 5vh;
+            
+            i {
+                font-size: 15vh;
+            }
+            
+            h2 {
+                font-size: 5vw;
+            }
+            
+            h3 {
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .maps {
+        width: 100%;
+        padding-bottom: 5vh;;
+
+       i {
+            font-size: 15vh;
+        }
+        
+        &__header{
+            &__headline{
+                font-size: 5vw;
+                padding-bottom: 2vh;
+            }
+            
+            h3 {
+                font-size: 4vw;
+            }
+        }
+    }
 }

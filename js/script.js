@@ -1,7 +1,6 @@
 // JavaScript Document
 
 // Ajax Product
-
 function loadDoc(url, cFunction) {
     var xhttp;
     xhttp=new XMLHttpRequest();
@@ -14,29 +13,14 @@ function loadDoc(url, cFunction) {
     xhttp.send();
 }
 
+// Ajax for Frontpage
 function ProductFunction(xhttp) {
     document.getElementById("frontpage").innerHTML =
     xhttp.responseText;
 }
- 
-function OpenProductFunction(xhttp) {
-    document.getElementById("frontpage").innerHTML =
-    xhttp.responseText;
-    
-    document.getElementById("menubutton_1").classList.remove("onpage");
-    document.getElementById("menubutton_2").classList.add("onpage");
-}
-
-function CloseProductFunction(xhttp) {
-    document.getElementById("frontpage").innerHTML =
-    xhttp.responseText;
-    document.getElementById("menubutton_2").classList.remove("onpage");
-    document.getElementById("menubutton_1").classList.add("onpage");
-}
 
 
 // Ajax Single Product
-
 function SingleProductFunction(xhttp) {
     document.getElementById("product_right").innerHTML =
     xhttp.responseText;
@@ -45,7 +29,6 @@ function SingleProductFunction(xhttp) {
 
 
 // Ajax Product More Info -Modem
-
 function Open_ProductMore(xhttp) {
     document.getElementById("ProductMore").innerHTML =
     xhttp.responseText;

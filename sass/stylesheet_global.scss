@@ -12,9 +12,15 @@ $orange:        #f89e0c;
 
 // General
 
+html {
+    margin: 0;
+    max-width: 100vw;
+}
+
 body {
 	margin: 0;
     font-family: 'Raleway', sans-serif;
+    max-width: 100vw;
 }
 
 a {
@@ -119,9 +125,12 @@ header {
 .footer {
     background-color: $darkgrey;
     display: grid;
-    grid-template-columns: 30% 50% 20%;
-    padding: 30px 10% 10px;
+    grid-template-columns: 20% 50% 20%;
+    padding: 20px 5% 10px;
     color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
     
     ul {
         list-style: disc;   
@@ -147,7 +156,7 @@ header {
         }
         
         div {
-            width: 70%;
+            width: 50%;
             height: 2px;
             margin: 15px 0 5px;
             background-color: white;
@@ -157,9 +166,10 @@ header {
             padding-left: 0;
             display: inline-block;
             vertical-align: top;
-            width: 35%;
+            width: 30%;
             line-height: 1.4;
             font-size: 1.1vw;
+            list-style: none;
         }
     }
     
@@ -177,6 +187,7 @@ header {
     
     ul {
         list-style: none;
+        font-size: 1.3vw;
         
         a {
             li {
@@ -191,6 +202,102 @@ header {
         
         .on {
             color: $orange;
+        }
+    }
+}
+
+
+/* Mobile resolution */
+@media only screen and (max-width: 1100px) {
+    header {
+        background-color: transparent;
+        position: absolute;
+
+        img {
+            width: 40%;
+            margin: 5vw 0 0 5vw;
+        }
+
+        ul {
+            margin: 6vw 10vw 0;
+
+            .onpage {
+                color: $orange;
+
+                div {
+                    height: 0;
+                    width: 0;
+                }
+            }
+
+            a {
+                display: block;
+                margin: 3vw 0;
+                font-size: 3.5vw;
+                text-align: right;
+            }
+        }
+    }
+    
+    .Aboutmenu {
+        position: absolute;
+        margin-top: 23vh;
+        margin-left: 0;
+        width: 100%;
+
+        ul {
+            border: solid;
+            border-width: 2px 0 0 0;
+            border-color: $orange;
+            padding-top: 3vh;
+            margin-right: 10vw;
+            text-align: right;
+            float: right;
+            
+            a {
+                li {
+                    font-size: 3.5vw;
+                    padding-bottom: 6vw;
+                }
+            }
+        }
+    }
+    
+    .footer {
+        grid-template-columns: 40% 60%;
+        padding: 50px 5% 10px;
+
+        &__links {
+            font-size: 5vw;
+        }
+
+        &__contact {
+            margin-top: 10px;
+            line-height: 1.2;
+
+            a {
+                font-size: 4vw;
+            }
+
+            div {
+                width: 100%;
+                height: 2px;
+                margin: 15px 0 5px;
+                background-color: white;
+            }
+
+            ul {
+                padding-left: 0;
+                display: block;
+                vertical-align: top;
+                width: 100%;
+                line-height: 1.4;
+                font-size: 4vw;
+            }
+        }
+
+        img {
+            display: none;
         }
     }
 }

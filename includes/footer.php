@@ -1,7 +1,6 @@
 <footer class="footer">
         <ul class="footer__links">
-            <a href="Index.php"><li>Frontpage</li></a>
-            <a href="Index.php"><li>Products</li></a>
+            <a href="index.php"><li>Frontpage</li></a>
             <a href="About.php"><li>About</li></a>
             <a href="About.php"><li>History</li></a>
             <a href="About.php"><li>Facilities</li></a>

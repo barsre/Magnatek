@@ -2,41 +2,22 @@
 .frontpage {
   padding-top: 8vw;
   height: 39vw; }
-  .frontpage__landingpage {
-    width: 80%;
-    margin: auto;
-    height: 29vw; }
-    .frontpage__landingpage__header {
-      text-align: center;
-      width: 80%;
-      margin: auto;
-      font-weight: lighter;
-      font-size: 2.5vw; }
-    .frontpage__landingpage__content {
-      display: grid;
-      grid-template-columns: 30% 40% 30%; }
-      .frontpage__landingpage__content h1 {
-        font-weight: lighter;
-        font-size: 1.5vw;
-        text-align: center;
-        width: 80%;
-        margin: auto; }
-        .frontpage__landingpage__content h1 b {
-          font-family: arial;
-          font-weight: lighter;
-          font-size: 1.7vw; }
-        .frontpage__landingpage__content h1 div {
-          margin: 10px auto;
-          height: 3px;
-          width: 20%;
-          background-color: #f89e0c; }
-      .frontpage__landingpage__content img {
-        width: 100%; }
   .frontpage__product {
     width: 65%;
     margin: auto;
     height: 29vw; }
-    .frontpage__product h1 {
+    .frontpage__product__header {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 2vw;
+      padding-bottom: 2vh; }
+    .frontpage__product__header2 {
+      text-align: center;
+      font-weight: lighter;
+      font-size: 1.5vw;
+      padding-bottom: 5vh;
+      color: #f89e0c; }
+    .frontpage__product__category-header {
       margin-bottom: 10px;
       font-size: 2vw;
       color: #666; }
@@ -45,7 +26,7 @@
       grid-template-columns: 32% 32% 32%;
       grid-gap: 10px 2%; }
       .frontpage__product__categories button {
-        height: 180px;
+        height: 25vh;
         background-size: 100%;
         background-position: center;
         border: none;
@@ -81,69 +62,94 @@
     display: grid;
     grid-template-columns: 47% 47%;
     grid-gap: 6%; }
-    .frontpage__category__left button {
-      border: none; }
-      .frontpage__category__left button i {
-        font-size: 1.85vw;
+    .frontpage__category__left {
+      height: 29vw;
+      overflow-y: scroll; }
+      .frontpage__category__left button {
+        border: solid;
+        border-color: #f89e0c;
+        border-radius: 1000px;
+        border-width: 2px; }
+        .frontpage__category__left button i {
+          font-size: 1.85vw;
+          color: #f89e0c;
+          padding: 5px; }
+      .frontpage__category__left button:hover {
+        cursor: pointer;
+        background-color: #f89e0c; }
+        .frontpage__category__left button:hover i {
+          color: #fff;
+          transition: 0.5s; }
+      .frontpage__category__left h1 {
+        font-weight: lighter;
+        font-size: 2vw;
+        padding: 1vw 0 0.5vw;
         color: #666; }
-      .frontpage__category__left button img {
-        padding-left: 20px;
-        height: 1.6vw;
-        opacity: 0.6; }
-    .frontpage__category__left button:hover {
-      cursor: pointer; }
-      .frontpage__category__left button:hover i {
-        color: #aaa;
-        transition: 0.5s; }
-      .frontpage__category__left button:hover img {
-        opacity: 0.4;
-        transition: 0.5s; }
-    .frontpage__category__left h1 {
-      font-weight: lighter;
-      font-size: 2vw;
-      padding: 1vw 0 0.5vw;
-      color: #666; }
-    .frontpage__category__left ul {
-      list-style: none;
-      padding-left: 0; }
-      .frontpage__category__left ul a {
-        cursor: pointer; }
-        .frontpage__category__left ul a li {
-          vertical-align: top;
-          border-radius: 10px;
-          margin-bottom: 10px;
-          background-color: lightgrey; }
-          .frontpage__category__left ul a li div {
+      .frontpage__category__left ul {
+        list-style: none;
+        padding-left: 0; }
+        .frontpage__category__left ul a {
+          cursor: pointer; }
+          .frontpage__category__left ul a li {
             vertical-align: top;
-            display: inline-block;
-            height: 50px;
-            width: 70px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px; }
-          .frontpage__category__left ul a li #CS60-04 {
-            background-image: url(../img/Product/Product/CS60-04_1.jpg); }
-          .frontpage__category__left ul a li #MB40-7 {
-            background-image: url(../img/Product/Product/MB40-7_1.jpg); }
-          .frontpage__category__left ul a li #MB70-6 {
-            background-image: url(../img/Product/Product/MB70-6_1.jpg); }
-          .frontpage__category__left ul a li #MB120-5 {
-            background-image: url(../img/Product/Product/MB120-5_1.jpg); }
-          .frontpage__category__left ul a li #MBG120-4 {
-            background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
-          .frontpage__category__left ul a li #MFX-160 {
-            background-image: url(../img/Product/Product/MFX-160_1.jpg); }
-          .frontpage__category__left ul a li #MFX-225 {
-            background-image: url(../img/Product/Product/MFX-225_1.jpg); }
-          .frontpage__category__left ul a li h2 {
-            display: inline-block;
-            font-family: arial;
-            font-weight: lighter;
-            font-size: 24px;
-            padding: 11px 15px; }
-        .frontpage__category__left ul a li:hover {
-          transition: 0.5s;
-          background-color: #f89e0c; }
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: lightgrey; }
+            .frontpage__category__left ul a li div {
+              vertical-align: top;
+              display: inline-block;
+              height: 50px;
+              width: 70px;
+              background-size: cover;
+              background-position: center;
+              border-radius: 10px; }
+            .frontpage__category__left ul a li #CS60_04 {
+              background-image: url(../img/Product/Product/CS60_04.jpg); }
+            .frontpage__category__left ul a li #CS70_4 {
+              background-image: url(../img/Product/Product/CS70_4.jpg); }
+            .frontpage__category__left ul a li #MB25_12 {
+              background-image: url(../img/Product/Product/MB25_12.jpg); }
+            .frontpage__category__left ul a li #MB40_7 {
+              background-image: url(../img/Product/Product/MB40_7.jpg); }
+            .frontpage__category__left ul a li #MB40_10 {
+              background-image: url(../img/Product/Product/MB40_10.jpg); }
+            .frontpage__category__left ul a li #MB50_8 {
+              background-image: url(../img/Product/Product/MB50_8.jpg); }
+            .frontpage__category__left ul a li #MB70_6 {
+              background-image: url(../img/Product/Product/MB70_6.jpg); }
+            .frontpage__category__left ul a li #MB120_5 {
+              background-image: url(../img/Product/Product/MB120_5.jpg); }
+            .frontpage__category__left ul a li #MBG120_4 {
+              background-image: url(../img/Product/Product/MBG120_4.jpg); }
+            .frontpage__category__left ul a li #MBG140_4 {
+              background-image: url(../img/Product/Product/MBG140_4.png); }
+            .frontpage__category__left ul a li #MBG160_3 {
+              background-image: url(../img/Product/Product/MBG160_3.jpg); }
+            .frontpage__category__left ul a li #MBG60_6 {
+              background-image: url(../img/Product/Product/MBG60_6.jpg); }
+            .frontpage__category__left ul a li #MBG90_4 {
+              background-image: url(../img/Product/Product/MBG90_4.jpg); }
+            .frontpage__category__left ul a li #MBG95_6 {
+              background-image: url(../img/Product/Product/MBG95_6.jpg); }
+            .frontpage__category__left ul a li #MFR250_3 {
+              background-image: url(../img/Product/Product/MFR250_3.jpg); }
+            .frontpage__category__left ul a li #MFU160_1 {
+              background-image: url(../img/Product/Product/MFU160_1.jpg); }
+            .frontpage__category__left ul a li #MFX_160 {
+              background-image: url(../img/Product/Product/MFX_160.jpg); }
+            .frontpage__category__left ul a li #MFX_225 {
+              background-image: url(../img/Product/Product/MFX_225.jpg); }
+            .frontpage__category__left ul a li #MFX250_3 {
+              background-image: url(../img/Product/Product/MFX250_3.jpg); }
+            .frontpage__category__left ul a li h2 {
+              display: inline-block;
+              font-family: arial;
+              font-weight: lighter;
+              font-size: 24px;
+              padding: 11px 15px; }
+          .frontpage__category__left ul a li:hover {
+            transition: 0.5s;
+            background-color: #f89e0c; }
     .frontpage__category__right {
       width: 100%;
       height: 27vw;
@@ -165,13 +171,15 @@
           background-position: center; }
         .frontpage__category__right__content h2 {
           font-family: arial;
-          font-size: 2vw;
+          font-size: 1.5vw;
           font-weight: lighter;
           padding-top: 0.5vw; }
         .frontpage__category__right__content p {
-          padding-top: 0.5vw; }
+          padding-top: 0.5vw;
+          font-size: 1.2vw; }
       .frontpage__category__right button {
-        color: #f89e0c;
+        background-color: #f89e0c;
+        color: black;
         padding: 10px 0;
         margin-left: 25%;
         margin-top: 0.5vw;
@@ -181,27 +189,51 @@
         transition: 0.5s;
         width: 50%; }
       .frontpage__category__right button:hover {
-        background-color: #f89e0c;
-        color: black; }
-      .frontpage__category__right #CS60-04 {
-        background-image: url(../img/Product/Product/CS60-04_1.jpg); }
-      .frontpage__category__right #MB40-7 {
-        background-image: url(../img/Product/Product/MB40-7_1.jpg); }
-      .frontpage__category__right #MB70-6 {
-        background-image: url(../img/Product/Product/MB70-6_1.jpg); }
-      .frontpage__category__right #MB120-5 {
-        background-image: url(../img/Product/Product/MB120-5_1.jpg); }
-      .frontpage__category__right #MBG120-4 {
-        background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
-      .frontpage__category__right #MFX-160 {
-        background-image: url(../img/Product/Product/MFX-160_1.jpg); }
-      .frontpage__category__right #MFX-225 {
-        background-image: url(../img/Product/Product/MFX-225_1.jpg); }
+        color: #f89e0c;
+        background-color: transparent; }
+      .frontpage__category__right #CS60_04 {
+        background-image: url(../img/Product/Product/CS60_04.jpg); }
+      .frontpage__category__right #CS70_4 {
+        background-image: url(../img/Product/Product/CS70_4.jpg); }
+      .frontpage__category__right #MB25_12 {
+        background-image: url(../img/Product/Product/MB25_12.jpg); }
+      .frontpage__category__right #MB40_7 {
+        background-image: url(../img/Product/Product/MB40_7.jpg); }
+      .frontpage__category__right #MB40_10 {
+        background-image: url(../img/Product/Product/MB40_10.jpg); }
+      .frontpage__category__right #MB50_8 {
+        background-image: url(../img/Product/Product/MB50_8.jpg); }
+      .frontpage__category__right #MB70_6 {
+        background-image: url(../img/Product/Product/MB70_6.jpg); }
+      .frontpage__category__right #MB120_5 {
+        background-image: url(../img/Product/Product/MB120_5.jpg); }
+      .frontpage__category__right #MBG120_4 {
+        background-image: url(../img/Product/Product/MBG120_4.jpg); }
+      .frontpage__category__right #MBG140_4 {
+        background-image: url(../img/Product/Product/MBG140_4.png); }
+      .frontpage__category__right #MBG160_3 {
+        background-image: url(../img/Product/Product/MBG160_3.jpg); }
+      .frontpage__category__right #MBG60_6 {
+        background-image: url(../img/Product/Product/MBG60_6.jpg); }
+      .frontpage__category__right #MBG90_4 {
+        background-image: url(../img/Product/Product/MBG90_4.jpg); }
+      .frontpage__category__right #MBG95_6 {
+        background-image: url(../img/Product/Product/MBG95_6.jpg); }
+      .frontpage__category__right #MFR250_3 {
+        background-image: url(../img/Product/Product/MFR250_3.jpg); }
+      .frontpage__category__right #MFU160_1 {
+        background-image: url(../img/Product/Product/MFU160_1.jpg); }
+      .frontpage__category__right #MFX_160 {
+        background-image: url(../img/Product/Product/MFX_160.jpg); }
+      .frontpage__category__right #MFX_225 {
+        background-image: url(../img/Product/Product/MFX_225.jpg); }
+      .frontpage__category__right #MFX250_3 {
+        background-image: url(../img/Product/Product/MFX250_3.jpg); }
   .frontpage__product_button {
     text-align: center; }
     .frontpage__product_button button {
       color: #f89e0c;
-      padding: 10px 40px;
+      padding: 1vw;
       margin: 3vw 0 4vw;
       border-radius: 50px;
       border-color: #f89e0c;
@@ -213,7 +245,7 @@
       color: black; }
 
 .ProductMore {
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -226,7 +258,7 @@
     font-size: 2vw;
     color: white;
     border: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 3vw 3vw 0 0;
     background-color: #aaa;
     transition: 0.5s; }
   .ProductMore__close:hover {
@@ -260,23 +292,51 @@
         padding-bottom: 5px; }
       .ProductMore__block__left__stats h3 {
         font-weight: lighter; }
-    .ProductMore__block__left #CS60-04 {
-      background-image: url(../img/Product/Product/CS60-04_1.jpg); }
-    .ProductMore__block__left #MB40-7 {
-      background-image: url(../img/Product/Product/MB40-7_1.jpg); }
-    .ProductMore__block__left #MB70-6 {
-      background-image: url(../img/Product/Product/MB70-6_1.jpg); }
-    .ProductMore__block__left #MB120-5 {
-      background-image: url(../img/Product/Product/MB120-5_1.jpg); }
-    .ProductMore__block__left #MBG120-4 {
-      background-image: url(../img/Product/Product/MBG120-4_1.jpg); }
-    .ProductMore__block__left #MFX-160 {
-      background-image: url(../img/Product/Product/MFX-160_1.jpg); }
-    .ProductMore__block__left #MFX-225 {
-      background-image: url(../img/Product/Product/MFX-225_1.jpg); }
+    .ProductMore__block__left #CS60_04 {
+      background-image: url(../img/Product/Product/CS60_04.jpg); }
+    .ProductMore__block__left #CS70_4 {
+      background-image: url(../img/Product/Product/CS70_4.jpg); }
+    .ProductMore__block__left #MB25_12 {
+      background-image: url(../img/Product/Product/MB25_12.jpg); }
+    .ProductMore__block__left #MB40_7 {
+      background-image: url(../img/Product/Product/MB40_7.jpg); }
+    .ProductMore__block__left #MB40_10 {
+      background-image: url(../img/Product/Product/MB40_10.jpg); }
+    .ProductMore__block__left #MB50_8 {
+      background-image: url(../img/Product/Product/MB50_8.jpg); }
+    .ProductMore__block__left #MB70_6 {
+      background-image: url(../img/Product/Product/MB70_6.jpg); }
+    .ProductMore__block__left #MB120_5 {
+      background-image: url(../img/Product/Product/MB120_5.jpg); }
+    .ProductMore__block__left #MBG120_4 {
+      background-image: url(../img/Product/Product/MBG120_4.jpg); }
+    .ProductMore__block__left #MBG140_4 {
+      background-image: url(../img/Product/Product/MBG140_4.png); }
+    .ProductMore__block__left #MBG160_3 {
+      background-image: url(../img/Product/Product/MBG160_3.jpg); }
+    .ProductMore__block__left #MBG60_6 {
+      background-image: url(../img/Product/Product/MBG60_6.jpg); }
+    .ProductMore__block__left #MBG90_4 {
+      background-image: url(../img/Product/Product/MBG90_4.jpg); }
+    .ProductMore__block__left #MBG95_6 {
+      background-image: url(../img/Product/Product/MBG95_6.jpg); }
+    .ProductMore__block__left #MFR250_3 {
+      background-image: url(../img/Product/Product/MFR250_3.jpg); }
+    .ProductMore__block__left #MFU160_1 {
+      background-image: url(../img/Product/Product/MFU160_1.jpg); }
+    .ProductMore__block__left #MFX_160 {
+      background-image: url(../img/Product/Product/MFX_160.jpg); }
+    .ProductMore__block__left #MFX_225 {
+      background-image: url(../img/Product/Product/MFX_225.jpg); }
+    .ProductMore__block__left #MFX250_3 {
+      background-image: url(../img/Product/Product/MFX250_3.jpg); }
     .ProductMore__block__right {
       font-size: 1.3vw;
-      line-height: 1.3; }
+      line-height: 1.3;
+      height: 65vh;
+      overflow-y: scroll; }
+      .ProductMore__block__right p {
+        padding-top: 20px; }
       .ProductMore__block__right a {
         color: #f89e0c;
         padding: 0 5px;
@@ -285,5 +345,122 @@
         color: white;
         background-color: #f89e0c;
         border-radius: 50px; }
+
+/* Small Screens */
+@media only screen and (max-width: 1100px) {
+  .frontpage {
+    padding-top: 10vh;
+    height: auto;
+    min-height: 90vh; }
+    .frontpage__product {
+      width: 100%;
+      height: 75vh; }
+      .frontpage__product__header {
+        text-align: left;
+        width: 70%;
+        margin-left: 5vw;
+        font-size: 4vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh; }
+      .frontpage__product__header2 {
+        text-align: left;
+        width: 60%;
+        margin-left: 5vw;
+        font-size: 3vw;
+        line-height: 1.5; }
+        .frontpage__product__header2 br {
+          display: none; }
+      .frontpage__product__category-header {
+        padding-bottom: 1vh;
+        margin-left: 2vw;
+        font-size: 5vw; }
+      .frontpage__product__categories {
+        grid-template-columns: 50% 50%;
+        grid-gap: 0; }
+        .frontpage__product__categories button {
+          height: 17vh; }
+          .frontpage__product__categories button h1 {
+            font-size: 4.5vw;
+            padding-top: 0;
+            width: 90%; }
+    .frontpage__category {
+      width: 100%;
+      height: auto;
+      min-height: 75vh;
+      display: block; }
+      .frontpage__category__left {
+        width: 80%;
+        margin-left: 5vw;
+        height: auto; }
+        .frontpage__category__left button {
+          position: absolute;
+          z-index: 3;
+          margin-top: 3vh; }
+          .frontpage__category__left button i {
+            font-size: 7.4vw; }
+        .frontpage__category__left h1 {
+          font-size: 4vw;
+          padding-top: 10vh; }
+        .frontpage__category__left ul {
+          padding-bottom: 2vh; }
+          .frontpage__category__left ul a li {
+            border-radius: 30px;
+            margin-bottom: 15px; }
+            .frontpage__category__left ul a li div {
+              height: 8vh;
+              width: 20vw;
+              border-radius: 30px; }
+            .frontpage__category__left ul a li h2 {
+              font-size: 4vh;
+              padding: 1.5vh 3vw; }
+      .frontpage__category__right {
+        height: auto;
+        min-height: 35vh;
+        max-height: inherit;
+        margin-bottom: 20vh; }
+        .frontpage__category__right h3 {
+          font-size: 4vw;
+          padding: 3vw; }
+        .frontpage__category__right__content {
+          height: auto;
+          min-height: 35vh;
+          max-height: inherit; }
+          .frontpage__category__right__content div {
+            height: 30vh; }
+          .frontpage__category__right__content h2 {
+            font-size: 5vw;
+            padding-top: 1vw;
+            padding: 2vw 2vw; }
+          .frontpage__category__right__content p {
+            font-size: 4vw;
+            padding: 0 2vw; }
+        .frontpage__category__right button {
+          padding: 1vh;
+          margin: 5vh 20% 0;
+          font-size: 4vw;
+          width: 60%;
+          color: white;
+          background-color: #f89e0c; }
+
+  .ProductMore {
+    z-index: 4;
+    position: fixed; }
+    .ProductMore__close {
+      width: 14vw;
+      font-size: 5vw; }
+    .ProductMore__block {
+      width: 90vw;
+      height: 90vh;
+      padding: 5vw 5vw;
+      display: block; }
+      .ProductMore__block__left__img {
+        height: 30vh; }
+      .ProductMore__block__left h1 {
+        font-size: 5vw; }
+      .ProductMore__block__left__stats {
+        font-size: 3vw;
+        padding-bottom: 2vh; }
+      .ProductMore__block__right {
+        font-size: 3vw; } }
 
 /*# sourceMappingURL=stylesheet_frontpage.css.map */

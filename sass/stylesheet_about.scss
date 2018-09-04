@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document */ 
 
 
 // Colours
@@ -13,25 +13,64 @@ $orange:        #f89e0c;
 // Page
 
 .info {
-    padding-top: 93vh;
     width: 80%;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     margin-bottom: 5vw;
-    display: grid;
-    grid-template-columns: 40% 50%;
-    grid-gap: 5%;
+    display: block;
+    padding-top: 5vh;
     
     &__txt {
-        width: 100%;
+        width: 70%;
         font-size: 1.2vw;
         line-height: 1.5;
-    }
-    
-    &__pic {
-        background-image: url(../img/about/magnatek.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
+        padding-bottom: 5vh;
+        
+        h1 {
+            padding-top: 15vh;
+            padding-bottom: 2vh;
+        }
+        
+        &__img {
+            position: fixed;
+            margin-top: 30vh;
+            margin-left: 35vw;
+            height: 70vh;
+            width: 50vw;
+            background-image: url(../img/about/Magnatek-Henrik.gif);
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    .video{
+        display: none;
+    }
+    
+    .info {
+        padding-top: 40vh;
+        width: 100%;
+        margin-bottom: 0;
+        max-width: inherit;
+
+        &__txt {
+            width: 60%;
+            font-size: 4vw;
+            line-height: 1.5;
+            margin-left: 5vw;
+            margin-bottom: 5vw;
+            
+            &__img {
+                position: absolute;
+                left: -5vw;
+                top: 10vh;
+                margin: 0;
+                height: 40vh;
+                width: 80vw;
+            }
+        }
+    }
+}
+

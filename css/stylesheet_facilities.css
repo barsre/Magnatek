@@ -27,4 +27,26 @@
       .info__content__images #pic2 {
         background-image: url(../img/facilities/hus.JPG); }
 
+@media only screen and (max-width: 1100px) {
+  .info {
+    padding-top: 12vh;
+    width: 100%;
+    margin-bottom: 0; }
+    .info__heading {
+      font-size: 5vw;
+      padding-left: 5vw; }
+    .info__content {
+      display: block; }
+      .info__content__txt {
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-bottom: 5vh;
+        width: 60%; }
+      .info__content__images {
+        width: 100%; }
+        .info__content__images__pic {
+          height: 40vh; }
+        .info__content__images #pic1 {
+          display: none; } }
+
 /*# sourceMappingURL=stylesheet_facilities.css.map */
