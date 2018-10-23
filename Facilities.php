@@ -9,7 +9,7 @@
 	<meta name="keywords" content="x-ray generators, x-ray sources, x-ray non-destructive testing, x-ray equipment, x-ray microfocus">
 	<meta name="author" content="Jacob barsøe, Katrine Nielsen, Jeevith Mohanakumar">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Meta/Fane_logo.jpg">
+    <link rel="icon" href="img/Meta/Logo.png">
     
 	<title>Facilities | Magnatek</title>
 
@@ -18,7 +18,7 @@
     <link href="css/stylesheet_facilities.css" rel="stylesheet">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
 </head>
 

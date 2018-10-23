@@ -16,7 +16,7 @@
                 <li>Denmark</li>
             </ul>
             <ul>
-                <li>Tel:+45 38 86 01 42</li>
+                <li>Tel: +45 38 86 01 42</li>
                 <li>Fax: +45 38 86 06 39</li>
                 <li>E-mail: info@magnatek.dk </li>
             </ul>

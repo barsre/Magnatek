@@ -1,14 +1,18 @@
 <div class="frontpage__category">
-    <div class="frontpage__category__left">
-        <button onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
-        <h1>Medical research</h1>
-        <ul>
-            <a onclick="loadDoc('ajax/Products/CS70_4.html', SingleProductFunction)"><li><div id="CS70_4"></div><h2>CS70_4</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MB120_5.html', SingleProductFunction)"><li><div id="MB120_5"></div><h2>MB120_5</h2></li></a>
-        </ul>   
+    
+    <button class="frontpage__category__backbutton" onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
+    <h1 class="frontpage__category__heading">Medical research</h1>
+    <h2 class="frontpage__category__subheading">Within medical research, Magnatek provides X-ray sources for bone densitometry measurements for early detection of osteoporosis and X-ray generators for various solutions like vetenary CT scannings - CT scanning of animals.</h2>
+    
+    <div class="frontpage__category__gallery">
+        <a onclick="loadDoc('ajax/ProductMore/CS70_4.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="CS70_4" class="frontpage__category__gallery__item__pic"></div>
+            <h1>CS70_4</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MB120_5.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MB120_5" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MB120_5</h1>
+        </div></a>
     </div>
-    <div id="product_right" style="background-image: url(img/Product/Category2.jpg);" class="frontpage__category__right">
-        <h3>Within medical research, Magnatek provides X-ray sources for bone densitometry measurements for early detection of osteoporosis and X-ray generators for various solutions like vetenary CT scannings - CT scanning of animals.</h3>
-    </div>
+    
 </div>
-

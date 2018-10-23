@@ -1,18 +1,31 @@
 <div class="frontpage__category">
-    <div class="frontpage__category__left">
-        <button onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
-        <h1>Electronics Circuit Board Inspection</h1>
-        <ul>
-            <a onclick="loadDoc('ajax/Products/MFU160_1.html', SingleProductFunction)"><li><div id="MFU160_1"></div><h2>MFU160_1</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MFR250_3.html', SingleProductFunction)"><li><div id="MFR250_3"></div><h2>MFR250_3</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MFX250_3.html', SingleProductFunction)"><li><div id="MFX250_3"></div><h2>MFX250_3</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MBG60_6.html', SingleProductFunction)"><li><div id="MBG60_6"></div><h2>MBG60_6</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MBG90_4.html', SingleProductFunction)"><li><div id="MBG90_4"></div><h2>MBG90_4</h2></li></a>
-        </ul>   
+    
+    <button class="frontpage__category__backbutton" onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
+    <h1 class="frontpage__category__heading">Electronics Circuit Board Inspection</h1>
+    <h2 class="frontpage__category__subheading">Magnatek provides X-ray sources for solutions where dual X-ray energy absorptiometry is ideally suited to measuring organic material. X-rays pass through the entire material to be measured without damaging it in any way. Applications can be in-line process control in the meat plant or measurement of moisture content in wood chips. 
+    <br><br>Other industrial applications may be rock detection in wood logs, thickness verification in extruded parts or detection and sorting of diamonds trapped inside kimberlite.</h2>
+    
+    <div class="frontpage__category__gallery">
+        <a onclick="loadDoc('ajax/ProductMore/MFU160_1.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MFU160_1" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MFU160_1</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MFR250_3.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MFR250_3" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MFR250_3</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MFX250_3.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MFX250_3" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MFX250_3</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MBG60_6.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG60_6" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG60_6</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MBG90_4.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG90_4" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG90_4</h1>
+        </div></a>
     </div>
-    <div id="product_right" style="background-image: url(img/Product/Category4.jpg);" class="frontpage__category__right">
-        <h3>Magnatek provides X-ray sources for solutions where dual X-ray energy absorptiometry is ideally suited to measuring organic material. X-rays pass through the entire material to be measured without damaging it in any way. Applications can be in-line process control in the meat plant or measurement of moisture content in wood chips. 
-        <br><br>Other industrial applications may be rock detection in wood logs, thickness verification in extruded parts or detection and sorting of diamonds trapped inside kimberlite.</h3>
-    </div>
+    
 </div>
-

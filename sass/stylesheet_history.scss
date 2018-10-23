@@ -110,3 +110,30 @@ $orange:        #f89e0c;
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .history {
+        padding-top: 40vh;
+        
+        &__section {
+            display: block;
+            
+            &__pic {
+                display: none;
+                margin-bottom: 50px;
+            }
+        }
+        
+        &__grey {
+            background-color: transparent;
+        }
+    }
+    
+    .only768 {
+        display: block;
+    }
+    
+    .also768 {
+        display: block;
+    }
+}

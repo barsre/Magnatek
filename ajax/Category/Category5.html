@@ -1,17 +1,27 @@
 <div class="frontpage__category">
-    <div class="frontpage__category__left">
-        <button onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
-        <h1>Security Screening</h1>
-        <ul>
-            <a onclick="loadDoc('ajax/Products/MBG90_4.html', SingleProductFunction)"><li><div id="MBG90_4"></div><h2>MBG90_4</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MBG95_6.html', SingleProductFunction)"><li><div id="MBG95_6"></div><h2>MBG95_6</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MBG140_4.html', SingleProductFunction)"><li><div id="MBG140_4"></div><h2>MBG140_4</h2></li></a>
-            <a onclick="loadDoc('ajax/Products/MBG160_3.html', SingleProductFunction)"><li><div id="MBG160_3"></div><h2>MBG160_3</h2></li></a>
-        </ul>   
+    
+    <button class="frontpage__category__backbutton" onclick="loadDoc('ajax/Landingpage.html', ProductFunction)"><i class="fas fa-arrow-left"></i></button>
+    <h1 class="frontpage__category__heading">Security Screening</h1>
+    <h2 class="frontpage__category__subheading">Magnatek is involved in the next generation X-ray scanning for screening of carry-on luggage. New and innovative X-ray technology using methods that disrupts the entire way of thinking airport security scanning. 
+    <br><br>Further, Magnatek delivers X-ray sources for a new scanner for Checked-in Luggage.</h2>
+    
+    <div class="frontpage__category__gallery">
+        <a onclick="loadDoc('ajax/ProductMore/MBG90_4.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG90_4" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG90_4</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MBG95_6.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG95_6" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG95_6</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MBG140_4.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG140_4" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG140_4</h1>
+        </div></a>
+        <a onclick="loadDoc('ajax/ProductMore/MBG160_3.html', Open_ProductMore)"><div class="frontpage__category__gallery__item">
+            <div id="MBG160_3" class="frontpage__category__gallery__item__pic"></div>
+            <h1>MBG160_3</h1>
+        </div></a>
     </div>
-    <div id="product_right" style="background-image: url(img/Product/Category5.jpg);" class="frontpage__category__right">
-        <h3>Magnatek is involved in the next generation X-ray scanning for screening of carry-on luggage. New and innovative X-ray technology using methods that disrupts the entire way of thinking airport security scanning.
-        <br><br>Further, Magnatek delivers X-ray sources for a new scanner for Checked-in Luggage.</h3>
-    </div>
+    
 </div>
-

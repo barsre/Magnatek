@@ -1,72 +1,54 @@
 /* CSS Document */
-.headline {
-  padding-top: 140px;
-  padding-bottom: 40px;
-  text-align: center; }
-  .headline h1 {
-    font-size: 3vw;
-    padding-bottom: 20px; }
-
 .contact {
-  display: grid;
-  grid-template-columns: 28% 34% 28%;
-  grid-gap: 5%;
-  margin: auto;
-  width: 80%; }
-  .contact__logo {
-    text-align: center; }
-    .contact__logo i {
-      color: #f89e0c;
-      font-size: 25vh;
-      padding-bottom: 5vh; }
-
-.maps {
-  display: grid;
-  grid-template-columns: 45% 30%;
-  grid-gap: 5%;
-  margin: auto;
-  width: 80%;
-  padding-top: 10%;
-  padding-bottom: 4%; }
-  .maps i {
-    color: #f89e0c;
-    font-size: 25vh; }
-  .maps__header {
-    text-align: right; }
-    .maps__header__headline {
-      font-size: 3vw; }
+  padding-top: 130px;
+  min-height: 55vh; }
+  .contact__heading {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 40px; }
+  .contact__content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 80px; }
+    .contact__content__info {
+      padding: 30px; }
+      .contact__content__info__item {
+        display: grid;
+        grid-template-columns: 12% 32% 56%;
+        padding-bottom: 25px; }
+        .contact__content__info__item i {
+          color: #f89e0c;
+          font-size: 36px; }
+        .contact__content__info__item h2 {
+          line-height: 1.4em; }
+    .contact__content__map iframe {
+      width: 100%;
+      height: 400px; }
 
 @media only screen and (max-width: 1100px) {
-  .headline {
-    padding-top: 15vh;
-    padding-left: 5vw;
-    text-align: left; }
-    .headline h1 {
-      font-size: 5vw; }
-
   .contact {
-    display: block;
-    margin: auto;
-    width: 80%; }
-    .contact__logo {
-      text-align: center;
-      padding-bottom: 5vh; }
-      .contact__logo i {
-        font-size: 15vh; }
-      .contact__logo h2 {
-        font-size: 5vw; }
-      .contact__logo h3 {
-        font-size: 4vw; }
-
-  .maps {
-    width: 100%;
-    padding-bottom: 5vh; }
-    .maps i {
-      font-size: 15vh; }
-    .maps__header__headline {
-      font-size: 5vw;
-      padding-bottom: 2vh; }
-    .maps__header h3 {
-      font-size: 4vw; } }
+    padding-top: 350px; }
+    .contact__heading {
+      display: none; }
+    .contact__content {
+      display: block;
+      margin-bottom: 0; }
+      .contact__content__info {
+        padding-left: 10vw; }
+      .contact__content__map iframe {
+        height: 600px; } }
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding-top: 250px; } }
+@media only screen and (max-width: 1100px) {
+  .contact {
+    padding-top: 100px; }
+    .contact__content__info__item {
+      display: block;
+      text-align: center; }
+    .contact__content__map iframe {
+      height: 400px; } }
 
 /*# sourceMappingURL=stylesheet_contact.css.map */

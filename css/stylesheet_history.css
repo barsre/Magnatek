@@ -59,5 +59,21 @@
       grid-template-columns: 50% 50%; }
     .history__white {
       grid-template-columns: 50% 50%; } }
+@media only screen and (max-width: 768px) {
+  .history {
+    padding-top: 40vh; }
+    .history__section {
+      display: block; }
+      .history__section__pic {
+        display: none;
+        margin-bottom: 50px; }
+    .history__grey {
+      background-color: transparent; }
+
+  .only768 {
+    display: block; }
+
+  .also768 {
+    display: block; } }
 
 /*# sourceMappingURL=stylesheet_history.css.map */

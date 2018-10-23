@@ -19,15 +19,6 @@ function ProductFunction(xhttp) {
     xhttp.responseText;
 }
 
-
-// Ajax Single Product
-function SingleProductFunction(xhttp) {
-    document.getElementById("product_right").innerHTML =
-    xhttp.responseText;
-    document.getElementById("product_right").style.background = "none";
-}
-
-
 // Ajax Product More Info -Modem
 function Open_ProductMore(xhttp) {
     document.getElementById("ProductMore").innerHTML =
