@@ -1,5 +1,5 @@
 <header>
-    <a href="index.php"><img src="img/general/Logo.jpg"></a>
+    <a href="index.php"><img src="img/general/Logo.jpg" alt="Magnatek Logo"></a>
     <ul>
         <div class="dropdown">
             <a href="index.php" id="menubutton_1"><li>Products</li><br><div></div></a>

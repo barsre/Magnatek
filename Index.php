@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
- 
+
 
 <head>
- 
+
     <!-- Meta tags -->
 	<meta charset="utf-8">
 	<meta name="description" content="Magnatek offers a wide range of highly stabilized, high frequency, high voltage portable x-ray generators for industrial and medical applications.">
-	<meta name="keywords" content="x-ray generators, x-ray sources, x-ray non-destructive testing, x-ray equipment, x-ray microfocus">
+	<meta name="keywords" content="x-ray, x-ray inspection, x-ray generators, x-ray medical researh, x-ray Industrial measuring and analysis, x-ray electronics circuit board inspection,
+              x-ray non-destructive testing, x-ray food inspection and sorting, x-ray security screening, x-ray ndt">
 	<meta name="author" content="Jacob barsøe, Katrine Nielsen, Jeevith Mohanakumar">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/Meta/Logo.png">
-    
+
 	<title>X-Ray Generators for Industrial & Medical Use | Magnatek</title>
 
     <!-- Stylesheets -->
@@ -25,19 +26,19 @@
 </head>
 
 <body>
-    
+
     <!-- Header -->
     <?php include 'includes/header.php';?>
 
     <!-- Product Section -->
     <section id="ProductMore" class="ProductMore nodisplay"></section>
-    
+
     <!-- Frontpage Section -->
     <section id="frontpage" class="frontpage">
         <div id="product" class="frontpage__product">
             <h1 class="frontpage__product__header">High frequency X-ray sources and high voltage X-ray generators</h1>
             <h1 class="frontpage__product__header2">We make our products match your needs</h1>
-            
+
             <h1 class="frontpage__product__category-header">Application Areas</h1>
             <div class="frontpage__product__categories">
                 <button onclick="loadDoc('ajax/Category/Category1.html', ProductFunction)" id="category_1"><h1>Industrial measuring and analysis</h1></button>
@@ -86,7 +87,7 @@
         loadDoc('ajax/Category/Tag2.html', ProductFunction)
     } else if (window.location.hash.substr(1) === "Auxillary") {
         loadDoc('ajax/Category/Tag3.html', ProductFunction)
-    } 
+    }
 </script>
 
 </html>
